@@ -1,23 +1,28 @@
 ---
 title: About
 permalink: /about/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: 'Die Hintergründe und Beweggründe, die diese Seite haben entstehen lassen.'
 layout: page
 youtube: true
 ---
 
-This starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template.
+## About the Dev
 
-It is built around the CSS boilerplate by Andy Bell and inspired by Andy's talk **'Be the browser’s mentor, not its micromanager'**.
 
-If you want to know exactly how it all works, [read this article on piccalil.li](https://piccalil.li/blog/a-css-project-boilerplate/).
+## About this Site
 
-The aim is to spread the idea and use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
+Diese Seite verwendet modernes CSS, Fluid type & Space, flexible Layouts und Progressive Enhancement. _Das war zumindest meine Absicht._
 
-- buildexcellentwebsit.es
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
-- Study the [original CSS boilerplate](https://github.com/Set-Creative-Studio/cube-boilerplate/tree/main)
+Die Basis des Layouts/Front-ends bildet das CSS Boilerplate von [Andy Bell](https://piccalil.li/author/andy-bell). Was genau dahinter steckt, lässt sich im [Artikel auf piccalil.li](https://piccalil.li/blog/a-css-project-boilerplate/) nachlesen.
 
-## Watch the talk
-
+Seinen sehr aufschlussreichen Talk...
 {% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+
+... und die [begleitende Webseite](https://buildexcellentwebsit.es) haben dabei nicht nur mich angesprochen.
+
+[Lene Saile](https://www.lenesaile.com/) war so begeistert, das Sie das [Eleventy Excellent starter](https://github.com/madrilene/eleventy-excellent) für [11ty](https://www.11ty.dev) erstellt hat.
+
+Da mir die Basis gefiel und ich eh gerade Urlaub hatte, habe ich mich entschlossen, mir mal wieder eine neue Seite zu machen. 
+
+Zum Glück habe ich frühzeitig angefangen, meine _"Artikel"_ in Markdown zu verfassen. Dadurch konnte ich die meisten Inhalte leicht durch meine ganzen Experimente ziehen.
+

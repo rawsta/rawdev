@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: Datenschutzerklärung
 seo:
   title: Privacy Policy
 permalink: /privacy/index.html
@@ -7,7 +7,15 @@ description: I respect the EU General Data Protection Regulation (GDPR). This po
 layout: page
 ---
 
-Edit your details in `_data/personal.yaml`
+**Datenschutz bei Verwendung dieser Seite**
+
+Sofern innerhalb des Internetangebotes die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten (E-Mail-Adressen, Namen, Anschriften u.a.) besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers grundsätzlich auf freiwilliger Basis. Ohne die ausdrückliche Zustimmung des Nutzers werden keine Daten an Dritte weitergeben.
+
+**Name und Kontaktdaten des Verantwortlichen**
+
+{{ personal.address }}
+
+_additionaly in english_
 
 I respect the EU General Data Protection Regulation (GDPR) and this policy document explains how I collect and handle any information you provide to me.
 

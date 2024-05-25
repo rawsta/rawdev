@@ -1,9 +1,9 @@
 ---
-title: Legal notice
+title: Impressum
 seo:
   title: Legal notice
 permalink: /imprint/index.html
-description: Imprint infos
+description: 'Mein eigenes kleines Impressum'
 layout: page
 ---
 

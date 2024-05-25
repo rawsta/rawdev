@@ -1,22 +1,18 @@
 ---
 permalink: /index.html
-title: 'Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: 'Hallo, ich bin rawsta'
+description: 'Webseite und Spielplatz von Sebastian Fiele'
 layout: 'home'
 blog:
   title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+  intro: "Meine Notizen, damit ich nichts vergesse."
 ---
 
-## An Eleventy starter
+## Mein Spielplatz _online_
 
-This starter is based on [Andy Bell's CSS workflow/boilerplate](/about/).
-In Andy's words, we'd rather hint the browser than micromanage it, using progressive enhancement, CSS layout, fluid type & spacing, and modern CSS features.
-The aim is to create frontends that look good to everyone, regardless of device, connection speed or context.
+Hier probiere ich neue Sachen aus und versuche dabei meine Erfahrungen zu [dokumentieren](/blog/).
 
-I have tried to [document a few things](/get-started/).
+Die Seite ist aufgebaut mit [11ty](https://www.11ty.dev).
+Da ich schon seit längerem ein Fan von den Beiträgen von [Andy Bell](https://piccalil.li/author/andy-bell) bin, habe ich versucht auf dieser Seite ein paar der [Konzepte](https://buildexcellentwebsit.es) umzusetzen.
 
-I keep a [branch of v1](https://github.com/madrilene/eleventy-excellent/tree/v1) because I have changed a lot of things.
-At the same time, I'm already [working on v3](https://github.com/madrilene/eleventy-excellent/tree/v3), where I'm switching to ESM and building components with webC where it makes sense.
-
-**Have fun** and let me know if you find any issues or have ideas for improvements!
+**Have fun** and let me know if you find [any issues](https://github.com/rawsta/rawdev/issues) or have ideas for improvements!

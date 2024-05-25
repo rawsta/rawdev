@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: 'All blog posts can be found here'
+description: 'Artikel zu Sachen, die mich interessieren.'
 layout: blog
 pagination:
   data: collections.posts
@@ -8,5 +8,4 @@ pagination:
 permalink: 'blog/{% if pagination.pageNumber >=1  %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 ---
 
-This blog has a pagination of **{{ pagination.size }}** posts per page.
-The pagination is only shown if there are more posts ({{ collections.posts.length }}) than items per page ({{ pagination.size }}).
+Aktuell gibt es {{ collections.posts.length }} Artikel in meiner Sammlung.
