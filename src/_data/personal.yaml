@@ -1,11 +1,10 @@
-email: hola@eyourmail.lol
+email: rawsta@rawsta.de
 address: |-
-  Organization name
-  Your street
-  12345, city
-  Tel: +34 928231911
+  Sebastian Fiele
+  48151  Münster
+  Tel: +49 123-456
 platforms:
-  github: 'https://github.com/madrilene/eleventy-excellent'
-  mastodon: 'https://front-end.social/@lene'
-  bluesky: 'https://bsky.app/profile/lenesaile.com'
-  kofi: 'https://ko-fi.com/lenesaile'
+  github: 'https://github.com/rawsta/rawdev'
+  mastodon: 'https://front-end.social/@rawsta'
+  bluesky: 'https://bsky.app/profile/rawsta.de'
+  kofi: 'https://ko-fi.com/rawsta'

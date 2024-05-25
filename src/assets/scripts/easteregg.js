@@ -1,3 +1,4 @@
+// @TODO: change trigger words
 const eleventyCode = ['e', 'l', 'e', 'v', 'e', 'n', 't', 'y'];
 const excellentCode = ['e', 'x', 'c', 'e', 'l', 'l', 'e', 'n', 't'];
 
@@ -22,6 +23,7 @@ document.addEventListener('keydown', event => {
     console.log('Hooray Eleventy!');
     indexEleventy = 0;
     indexExcellent = 0;
+    // @TODO: make confetti work local
     import('https://esm.run/canvas-confetti').then(module => {
       const confetti = module.default;
       const scalar = 4;

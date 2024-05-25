@@ -23,11 +23,11 @@ module.exports = {
   ],
   bottom: [
     {
-      text: 'Imprint',
+      text: 'Impressum',
       url: '/imprint/'
     },
     {
-      text: 'Privacy',
+      text: 'Datenschutz',
       url: '/privacy/'
     }
   ]

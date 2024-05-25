@@ -19,7 +19,7 @@ async function fetchScreenshot(url, filePath) {
   });
 
   await fs.writeFile(filePath, buffer);
-  console.log(`Screenshot saved to ${filePath}`);
+  console.info(`Screenshot landete in ${filePath}`);
 }
 
 async function generateScreenshots() {
@@ -37,7 +37,7 @@ async function generateScreenshots() {
     try {
       await fetchScreenshot(link, filePath);
     } catch (error) {
-      console.error(`Error processing ${name}: ${error.message}`);
+      console.error(`Fehler bei der verarbeitung von ${name}: ${error.message}`);
     }
   }
 }
