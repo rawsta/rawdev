@@ -6,9 +6,9 @@ description: 'Kleines Markdown Cheatsheet, für die Seite.'
 date: 2019-01-03
 #template: post
 #slug: markdown-cheatsheet
-#tags:
-#    - markdown
-#    - large
+tags:
+  - markdown
+  - cheatsheet
 ---
 
 # Markdown Cheatsheet
@@ -23,6 +23,9 @@ Warum noch ein Cheatsheet? <br>
 [Es](http://github.github.com/github-flavored-markdown/) [gibt](https://www.markdownguide.org/cheat-sheet/) [bereits](https://github.com/im-luka/markdown-cheatsheet) [unzählige](http://mdcheatsheet.com), [umfangreichere](https://markdown.land/markdown-cheat-sheet) [Cheatsheets](http://mdcheatsheet.com).
 
 Dieses Cheatsheet ist speziell auf diese Seite zu geschnitten. Gerade die Einbindungen von z.B. [YouTube Videos](#videos) sind hier etwas anders. 
+
+> TODO: Umstellen von Highlight.js zu Prism.js
+> TODO: Verfügbare Funktionen abbilden
 
 ##### Table of Contents
 
@@ -166,7 +169,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 
 
-
 <a name="links"/>
 
 ## Links
@@ -220,39 +222,38 @@ Und hier etwas Text, um deutlich zu machen, dass Fußnoten und Referenzen erst s
 Hier ist ein Logo __(hover, um den title zu sehen)__:
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/bilder/icon48.png "Logo Title Text 1")
+![alt text](https://img.logoipsum.com/300.svg "Logo Title Text 1")
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/bilder/icon48.png "Logo Title Text 2"
+[logo]: https://img.logoipsum.com/300.svg "Logo Title Text 2"
 ```
-
 Hier ist ein Logo __(hover, um den title zu sehen)__:
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/bilder/icon48.png "Logo Title Text 1")
+![alt text](https://img.logoipsum.com/300.svg "Logo Title Text 1")
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/bilder/icon48.png "Logo Title Text 2"
-
+[logo]: https://img.logoipsum.com/300.svg "Logo Title Text 2"
 
 
 <a name="code"/>
 
 ## Code und Syntax Highlighting
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP überschriften); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Codeblöcke sind Bestandteil der Markdown spec aber Syntax Highlighting leider nicht. Abgesehen davon beherrschen die meisten Renderer mehr oder weniger eine Art Highlighting. Für eine Übersicht der verfügbaren Sprachen besuche die [highlight.js Demoseite](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 ```no-highlight
-Inline `code` has `back-ticks around` it.
+Inline `code` ist umgeben `von back-ticks`.
 ```
 
-Inline `code` has `back-ticks around` it.
+Inline `code` ist umgeben `von back-ticks`.
 
-Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+Codeblöcke werden durch Zeilen mit drei Back-Ticks eingegrenzt <code>```</code>.<br>
+Es geht zwar auch mit 4 Leerzeichen, was eher unpraktisch ist.
 
 <pre lang="no-highlight"><code>
 ```javascript
@@ -324,10 +325,10 @@ Für eine umfangreichere Übersicht er unterstüzten Sprachen, besuche die [high
 
 ## Emojis
 
-:exclamation: Emoji icons können auch einfach eingefügt werden. :+1:  weitere Codes auf [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+:exclamation: Emoji icons können auch einfach eingefügt werden. :+1:<br>
+weitere Codes auf [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
-    Markup : Code appears between colons :EMOJICODE:
-
+> Markup : Code appears between colons :EMOJICODE:
 
 
 <a name="tabellen"/>
@@ -347,10 +348,10 @@ Doppelpunkte werden für die Ausrichtung der Tabelle benutzt.
 
 Die äußeren __"Pipes"__ <kbd>|</kbd> sind optional und müssen auch nicht unbedingt ausgerichtet sein.
 
-| | Markdown | Less           | Pretty     |     |
-| | ------------- | --------------- | ---------- |------- |
-| | *Still*   | `renders` | **nicely** | |
-| | 1               | 2                 | 3          |          |
+| Markdown | Less           | Pretty     |
+| ------------- | --------------- | ---------- |
+| *Still*   | `renders` | **nicely** |
+| 1               | 2                 | 3          |
 ```
 
 Doppelpunkte werden für die Ausrichtung der Tabelle benutzt.
@@ -363,10 +364,10 @@ Doppelpunkte werden für die Ausrichtung der Tabelle benutzt.
 
 Die äußeren __"Pipes"__ <kbd>|</kbd> sind optional und müssen auch nicht unbedingt ausgerichtet sein.
 
-| | Markdown | Less           | Pretty     |     |
-| | ------------- | --------------- | ---------- |------- |
-| | *Still*   | `renders` | **nicely** | |
-| | 1               | 2                 | 3          |          |
+| Markdown | Less           | Pretty     |
+| ------------- | --------------- | ---------- |
+| *Still*   | `renders` | **nicely** |
+| 1               | 2                 | 3          |
 
 
 
@@ -485,15 +486,21 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
-
-
 
 <a name="videos"/>
 
 ## YouTube Videos
 
-They can't be added directly but you can add an image with a link to the video like this:
+<pre lang="no-highlight"><code>
+```no-highlight
+{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+```
+</code></pre>
+
+**Ausgabe:**
+{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+
+Einbindung von Videos ist eigentlich nicht vorgesehen. Man kann jedoch ein Bild einfügen und das Video verlinken.
 
 ```no-highlight
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE

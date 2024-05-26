@@ -1,24 +1,19 @@
 ---
 title: ServiceWorker und PWA
+description: 'Was macht der ServiceWorker innerhalb einer Progressive Web App'
 date: 2019-11-05
-cover: /assets/serviceworker-title.jpg
-category: javascript
-template: post
-slug: serviceworker-und-pwa
+#cover: /assets/serviceworker-title.jpg
+#category: javascript
+##template: post
+#slug: serviceworker-und-pwa
 tags:
-    - swjs
     - serviceworker
     - pwa
 ---
 
-# ServiceWorker mit Workbox
+# ServiceWorker (mit Workbox)
 
-----
 
-**Hinweis:** Dieser Beitrag ist mehr als Platzhalter gedacht, bis ich den weiter ausarbeiten kann. Sorry!
-
-----
-<!--
 ##### Table of Contents
 - [Funktionsweise](#funktionsweise)
 - [Was ist ein ServiceWorker?](#was-ist-ein-serviceworker?)
@@ -37,11 +32,7 @@ tags:
 - [Die verschiedenen Strategien](#die-verschiedenen-strategien)
 - [Workbox Plugins](#workbox-plugins)
 - [Tipps und Tricks](#tipps-und-tricks)
--->
 
-```toc
-# Here comes the TOC
-```
 
 ## Was ist ein ServiceWorker?
 Technisch gesehen ist ein Service Worker ein spezieller Web Worker, bietet also eine Möglichkeit, JavaScript unabhängig vom Hauptthread auszuführen.

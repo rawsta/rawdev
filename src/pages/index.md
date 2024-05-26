@@ -1,6 +1,6 @@
 ---
 permalink: /index.html
-title: 'Hallo, ich bin rawsta'
+title: 'Hi, ich bin rawsta'
 description: 'Webseite und Spielplatz von Sebastian Fiele'
 layout: 'home'
 blog:

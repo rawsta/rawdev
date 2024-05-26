@@ -1,10 +1,10 @@
 ---
 title: Das Genesis Framework
-cover: /assets/windows-title.jpg
-category: wordpress
+#cover: /assets/windows-title.jpg
+#category: wordpress
 date: 2019-12-12
-template: post
-slug: genesis-framework
+#template: post
+#slug: genesis-framework
 tags:
     - wordpress
     - themes

@@ -1,15 +1,14 @@
 ---
 title: Windows Tools
-description: 'Verschiedene Windows Programme, die ich benutze oder benutzt habe.'
+description: 'Verschiedene Windows Programme, die ich in den vergangenen Jahren benutzt habe oder immernoch benutze.'
 #cover: /assets/windows-title.jpg
 #category: windows
 date: 2019-09-16
 #template: post
 #slug: windows-tools
-#tags:
-#    - windows
-#    - tools
-#    - helper
+tags:
+    - windows
+    - tools
 ---
 # Rawsta's Windows List
 

@@ -6,10 +6,10 @@ date: 2019-04-20
 #category: server
 #template: post
 #slug: php-und-opcache
-#tags:
-#    - php
-#    - opcache
-#    - server
+tags:
+  - php
+  - opcache
+  - server
 ---
 
 # OpCache Einstellungen

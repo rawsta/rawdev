@@ -1,13 +1,14 @@
 ---
 title: Das Manifest zur PWA
 date: 2019-10-02
-cover: /assets/manifest-title.jpg
-slug: manifest-zur-pwa
-category: javascript
-template: post
+description: 'Verschiedene Windows Programme, die ich benutze oder benutzt habe.'
+#cover: /assets/manifest-title.jpg
+#slug: manifest-zur-pwa
+#category: javascript
+#template: post
 tags:
 -   pwa
--   info
+-   serviceworker
 -   wip
 ---
 
