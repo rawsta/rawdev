@@ -1,12 +1,12 @@
 .site-foot {
-  margin-block-start: var(--space-l-xl);
+  margin-block-start: var(--space-xl-2xl);
   padding: var(--space-s-m);
   color: var(--color-text);
 }
 
 .site-foot__inner {
   display: flex;
-  gap: var(--space-xs);
+  gap: var(--space-s);
   justify-content: center;
   align-items: center;
 }
@@ -38,8 +38,7 @@
   background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
-}
-
-.site-foot .creator:hover svg {
-  color: var(--color-text);
+  & svg {
+    color: var(--color-text);
+  }
 }
