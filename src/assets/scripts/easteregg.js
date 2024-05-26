@@ -1,6 +1,6 @@
 // @TODO: change trigger words
 const eleventyCode = ['e', 'l', 'e', 'v', 'e', 'n', 't', 'y'];
-const excellentCode = ['e', 'x', 'c', 'e', 'l', 'l', 'e', 'n', 't'];
+const rawstaCode = ['r', 'a', 'w', 's', 't', 'a'];
 
 let indexEleventy = 0;
 let indexExcellent = 0;
@@ -13,17 +13,17 @@ document.addEventListener('keydown', event => {
     indexEleventy = 0;
   }
 
-  if (excellentCode[indexExcellent] === event.key.toLowerCase()) {
+  if (rawstaCode[indexExcellent] === event.key.toLowerCase()) {
     ++indexExcellent;
   } else {
     indexExcellent = 0;
   }
 
-  if (indexEleventy === eleventyCode.length || indexExcellent === excellentCode.length) {
+  if (indexEleventy === eleventyCode.length || indexExcellent === rawstaCode.length) {
     console.log('Hooray Eleventy!');
     indexEleventy = 0;
     indexExcellent = 0;
-    // @TODO: make confetti work local
+    // TODO: make confetti work local
     import('https://esm.run/canvas-confetti').then(module => {
       const confetti = module.default;
       const scalar = 4;

@@ -4,7 +4,8 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 {
-  "name": "{{ meta.siteName }} - {{ meta.siteDescription }}",
+  "name": "{{ meta.siteName }}",
+  "description": "{{ meta.siteDescription }}",
   "short_name": "{{ meta.siteName }}",
   "start_url": "{{ meta.url }}",
   "icons": [
@@ -19,7 +20,7 @@ excludeFromSitemap: true
       "type": "image/png"
     },
     {
-      "src": "/maskable.png",
+      "src": "/apple-touch-icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

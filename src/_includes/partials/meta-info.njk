@@ -14,26 +14,23 @@
 />
 
 <meta name="theme-color" content="{{ meta.themeColor }}" />
-<!-- Search Engines -->
+
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
-<!-- Made with Eleventy! -->
+
 <meta name="generator" content="{{ eleventy.generator }}" />
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+
 <meta name="format-detection" content="telephone=no" />
-<!-- supports both dark and light color schemes, page author prefers light as default. -->
-<meta name="color-scheme" content="light dark" />
+
+<meta name="color-scheme" content="dark light" />
 <!-- activates page transitions @TODO: replace with current solution -->
 <meta name="view-transition" content="same-origin" />
 
-<!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="{{ meta.url }}{{ page.url }}" />
 
-<!-- Links to information about the author(s) of the document -->
 <link rel="author" href="humans.txt" />
 
 {% if personal.platforms.mastodon %}
-  <!-- Mastodon verified site -->
   <link rel="me" href="{{ personal.platforms.mastodon }}" />
 {% endif %}
 
@@ -77,9 +74,6 @@
 <meta property="og:locale" content="{{ meta.locale }}" />
 <meta property="article:author" content="{{ meta.author.name }}" />
 
-<!-- Twitter specific head data was removed in v2 -->
-
-<!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
 {% for feedLink in meta.blog.feedLinks %}
   <link
     rel="alternate"
