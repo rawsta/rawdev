@@ -2,16 +2,14 @@
 
 <header class="wrapper">
   <div class="repel ontop">
-    <a
-      href="/"
-      class="logo | cluster"
+    <a href="/" class="logo | cluster" title="{{ meta.siteName }}"
       {% if page.url == "/" %}aria-current="page"{% endif %}
-    >
+      >
       {% include "svg/rawsta.svg" %}
-      <span>{{ meta.siteName }}</span>
+      <!-- <span>{{ meta.siteName }}</span> -->
     </a>
     {% include "partials/main-nav.njk" %}
-    
+
   <!-- theme switch -->
   {% include 'components/theme-switch.njk' %}
 
