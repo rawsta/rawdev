@@ -7,7 +7,7 @@ youtube: true
 ---
 
 ## About the Dev
-
+Hi, mein Name ist Sebastian Fiele und ich bastel gerne an Webseiten.
 
 ## About this Site
 

@@ -1,10 +1,10 @@
 email: rawsta@rawsta.de
 address: |-
   Sebastian Fiele
-  48151  Münster
+  48151 Münster
   Tel: +49 123-456
 platforms:
-  github: 'https://github.com/rawsta/rawdev'
-  mastodon: 'https://front-end.social/@rawsta'
-  bluesky: 'https://bsky.app/profile/rawsta.de'
-  kofi: 'https://ko-fi.com/rawsta'
+  github: 'https://github.com/rawsta'
+  mastodon: 'https://social.linux.pizza/@rawsta'
+  #bluesky: 'https://bsky.app/profile/rawsta.de'
+  #kofi: 'https://ko-fi.com/rawsta'
