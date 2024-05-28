@@ -75,7 +75,7 @@
   font-weight: 700;
   src:
     local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2');
+    url('/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2') format('woff2');
 }
 
 @font-face {
@@ -85,26 +85,36 @@
   font-weight: normal;
   src:
     local(''),
-    url(/assets/fonts/robotomono/robotomono-regular.woff2) format('woff2');
+    url('/assets/fonts/robotomono/robotomono-regular.woff2') format('woff2');
 }
 
 /* NEW FONTS */
 
 @font-face {
-  font-family: 'Protest Strike';
+  font-family: 'Inter';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src:
     local(''),
-    url(/assets/fonts/protest/protest-strike-v2-latin-regular.woff2) format('woff2');
+    url('/assets/fonts/protest/InterDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/assets/fonts/protest/InterDisplay-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
   font-display: swap;
-  font-weight: regular;
+  font-weight: 400;
   src:
     local(''),
     url('/assets/fonts/outfit/outfit-v11-latin-regular.woff2') format('woff2');
@@ -137,7 +147,7 @@
   font-weight: 500;
   src:
     local(''),
-    url(/assets/fonts/monaspace/MonaspaceArgon-Medium.woff2) format('woff2');
+    url('/assets/fonts/monaspace/MonaspaceArgon-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -147,5 +157,5 @@
   font-weight: 500;
   src:
     local(''),
-    url(/assets/fonts/monaspace/MonaspaceArgon-MediumItalic.woff2) format('woff2');
+    url('/assets/fonts/monaspace/MonaspaceArgon-MediumItalic.woff2') format('woff2');
 }
