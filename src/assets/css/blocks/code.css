@@ -10,7 +10,43 @@ code {
 pre {
   --dark-bg: color-mix(in oklab, var(--color-bg) 92%, black);
   grid-column: popout !important;
+  counter-reset: lineNumber;
 }
+
+/* trying linenumbers */
+code .highlight-line:before {
+  -webkit-user-select: none;
+  user-select: none;
+  border-right: 1px solid #404040;
+  color: #858585;
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  margin-right: 1.2em;
+  padding-right: 1.2em;
+  text-align: right;
+  width: 2.4em;
+}
+/* trying linenumbers 
+pre {
+  counter-reset: lineNumber;
+}
+code .highlight-line:before {
+  -webkit-user-select: none;
+  user-select: none;
+  border-right: 1px solid #404040;
+  color: #858585;
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  margin-right: 1.2em;
+  padding-right: 1.2em;
+  text-align: right;
+  width: 2.4em;
+}
+*/
 
 code,
 pre {
