@@ -37,38 +37,8 @@
   );
 }
 
-/* Default / Light theme specific variables */
+/* Default / Dark theme specific variables */
 :root,
-:root[data-theme='light'] {
-  --color-text: var(--color-base-dark);
-  --color-bg: var(--color-base-light);
-  --color-base: var(--color-base-dark);
-  --color-primary: var(--color-primary-highlight);
-  --color-secondary: var(--color-secondary-highlight);
-  --color-tertiary: var(--color-tertiary-highlight);
-  /* Fallbacks if modern color syntax not supported */
-  --color-text-accent: #505050;
-  --color-bg-accent: #fdfdfd;
-  --color-bg-accent-2: #f7f7f7;
-}
-
-/* Dark theme specific variables based on system preference */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: var(--color-base-light);
-    --color-bg: var(--color-base-dark);
-    --color-base: var(--color-base-light);
-    --color-primary: var(--color-primary-highlight);
-    --color-secondary: var(--color-secondary-highlight);
-    --color-tertiary: var(--color-tertiary-highlight);
-    /* Fallbacks if modern color syntax not supported */
-    --color-text-accent: #a8a8a8;
-    --color-bg-accent: #383838;
-    --color-bg-accent-2: #404040;
-  }
-}
-
-/* Dark theme specific variables based on manual override */
 :root[data-theme='dark'] {
   --color-text: var(--color-base-light);
   --color-bg: var(--color-base-dark);
@@ -80,6 +50,36 @@
   --color-text-accent: #a8a8a8;
   --color-bg-accent: #383838;
   --color-bg-accent-2: #404040;
+}
+
+/* Light theme specific variables based on system preference */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: var(--color-base-dark);
+    --color-bg: var(--color-base-light);
+    --color-base: var(--color-base-dark);
+    --color-primary: var(--color-primary-highlight);
+    --color-secondary: var(--color-secondary-highlight);
+    --color-tertiary: var(--color-tertiary-highlight);
+    /* Fallbacks if modern color syntax not supported */
+    --color-text-accent: #505050;
+    --color-bg-accent: #fdfdfd;
+    --color-bg-accent-2: #f7f7f7;
+  }
+}
+
+/* Light theme specific variables based on manual override */
+:root[data-theme='light'] {
+  --color-text: var(--color-base-dark);
+  --color-bg: var(--color-base-light);
+  --color-base: var(--color-base-dark);
+  --color-primary: var(--color-primary-highlight);
+  --color-secondary: var(--color-secondary-highlight);
+  --color-tertiary: var(--color-tertiary-highlight);
+  /* Fallbacks if modern color syntax not supported */
+  --color-text-accent: #505050;
+  --color-bg-accent: #fdfdfd;
+  --color-bg-accent-2: #f7f7f7;
 }
 
 /* Enhancements for browsers that support color-mix */
@@ -143,6 +143,7 @@
 }
 
 /* Enhancements for browsers that support relative color values */
+/*
 @supports (color: hsl(from red h s l)) {
   @media (prefers-color-scheme: dark) {
     :root {
@@ -158,3 +159,4 @@
     --color-tertiary: hsl(from var(--color-tertiary-highlight) h calc(s / 1.2) l);
   }
 }
+*/
