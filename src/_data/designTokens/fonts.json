@@ -5,17 +5,25 @@
     {
       "name": "Display",
       "description": "Display font stack for headings and large text.",
-      "value": ["Redhat", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": [
+        "Dela Gothic One", 
+        "Redhat", 
+        "Segoe UI", 
+        "Roboto", 
+        "Helvetica Neue", 
+        "Arial", 
+        "sans-serif"
+      ]
     },
     {
       "name": "Base",
       "description": "Base font stack for body text.",
       "value": [
+        "Outfit",
         "Figtree",
         "Optima",
         "Candara",
         "Noto Sans",
-        "source-sans-pro",
         "sans-serif"
       ]
     },
@@ -23,10 +31,10 @@
       "name": "Mono",
       "description": "Monospace font for code and preformatted text.",
       "value": [
+        "Monaspace Argon",
         "RobotoMono",
         "ui-monospace",
         "Cascadia Code",
-        "Source Code Pro",
         "Menlo",
         "Consolas",
         "DejaVu Sans Mono",

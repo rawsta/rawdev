@@ -87,3 +87,65 @@
     local(''),
     url(/assets/fonts/robotomono/robotomono-regular.woff2) format('woff2');
 }
+
+/* NEW FONTS */
+
+@font-face {
+  font-family: 'Dela Gothic One';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local(''),
+    url(/assets/fonts/delagothic/dela-gothic-one-v15-latin-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-display: swap;
+  font-weight: regular;
+  src:
+    local(''),
+    url('/assets/fonts/outfit/outfit-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/assets/fonts/outfit/outfit-v11-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    local(''),
+    url('/assets/fonts/outfit/outfit-v11-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Monaspace Argon';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local(''),
+    url(/assets/fonts/monaspace/MonaspaceArgon-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Monaspace Argon';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local(''),
+    url(/assets/fonts/monaspace/MonaspaceArgon-MediumItalic.woff2) format('woff2');
+}
