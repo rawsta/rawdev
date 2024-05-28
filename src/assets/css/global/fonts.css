@@ -91,13 +91,13 @@
 /* NEW FONTS */
 
 @font-face {
-  font-family: 'Dela Gothic One';
+  font-family: 'Protest Strike';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src:
     local(''),
-    url(/assets/fonts/delagothic/dela-gothic-one-v15-latin-regular.woff2) format('woff2');
+    url(/assets/fonts/protest/protest-strike-v2-latin-regular.woff2) format('woff2');
 }
 
 @font-face {
