@@ -36,7 +36,17 @@
 
 <!-- Open Graph meta  -->
 <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
-<meta property="og:type" content="website" />
+
+{% if layout != "pages" %}
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ page.date | attributeDate }}" />
+  {% for tag in tags %}
+    <meta property="article:tag" content="{{ tag }}" />
+  {% endfor %}
+{%- else -%}
+  <meta property="og:type" content="website" />
+{% endif %}
+
 <meta
   property="og:title"
   content="{%- if discover.title -%}
@@ -68,7 +78,11 @@
 <meta property="og:image:height" content="630" />
 <meta
   property="og:description"
-  content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}"
+  content="{% if description %}
+    {{ description }}
+  {% else %}
+    {{ meta.siteDescription }}
+  {% endif %}"
 />
 <meta property="og:site_name" content="{{ meta.siteName }}" />
 <meta property="og:locale" content="{{ meta.locale }}" />
@@ -86,5 +100,11 @@
 <!-- Favicon: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
 <link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="any" />
 <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="{{ meta.themeColor }}" />
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}" />
-<link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
+<meta name="apple-mobile-web-app-title" content="{{meta.siteName }}" />
+{# https://timkadlec.com/remembers/2018-06-06-web-watch/ #}
+<meta name="disabled-adaptations" content="watch" />
+{# crossorigin: https://twitter.com/TimVereecke/status/1225547620791341062 #}
+<link rel="manifest" href="{{ '/site.webmanifest' | url }}" crossorigin="use-credentials" />
