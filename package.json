@@ -1,8 +1,12 @@
 {
   "name": "rawdev",
   "version": "2.2.6",
-  "description": "Kleine Testseite zum experimentieren.",
-  "author": "Sebastian Fiele",
+  "description": "Just another side-project which may result in a real page.",
+  "author": {
+		"name": "Sebastian Fiele",
+		"url": "https://rawsta.de/",
+		"email": "rawsta@rawsta.de"
+	},
   "license": "ISC",
   "engines": {
     "node": ">=18.x.x"
@@ -13,12 +17,21 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
+    "start:debug": "DEBUG=Eleventy* npm start",
     "build": "run-s clean build:*"
   },
-  "keywords": [],
+  "keywords": [
+    "eleventy",
+    "something",
+    "playground",
+    "rawsta"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/rawsta/rawdev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rawsta/rawdev/issues"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
