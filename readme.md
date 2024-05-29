@@ -1,30 +1,13 @@
-# Eleventy Excellent
+# Rawsta-Dev
 
-Easy to use Eleventy starter, based on the workflow suggested by Andy Bell's [buildexcellentwebsit.es](https://buildexcellentwebsit.es/).
+This is my playground to experiment with new things and have a place to store my notes.
+Since this project is just another fun side-project of mine, most of the content will be in German.
 
-![GitHub Repo stars](https://img.shields.io/github/stars/madrilene/eleventy-excellent?style=flat-square&logo=github&logoColor=white&label=GitHub%20stars)
-[![Follow @lene@front-end.social](https://img.shields.io/mastodon/follow/109292536543732634?domain=https%3A%2F%2Ffront-end.social&style=flat-square&logo=Mastodon&logoColor=white&labelColor=%235B4BE1)](https://front-end.social/@lene)
-
-If you end up using this starter, feel free to send me a link, I'd love to see it!
-
-- [Eleventy Excellent](#eleventy-excellent)
-  - [Preview](#preview)
-  - [Features](#features)
-  - [First steps](#first-steps)
-  - [Development](#development)
-    - [Install dependencies](#install-dependencies)
-    - [Working locally](#working-locally)
-    - [Creating a production build](#creating-a-production-build)
-  - [Built with Eleventy Excellent](#built-with-eleventy-excellent)
-  - [Credits and Thank yous](#credits-and-thank-yous)
-
-## Preview
-
-https://eleventy-excellent.netlify.app/
+Feel free to open an issue, if you have questions.
 
 ## Features
 
-**This starter includes:**
+**This Site includes:**
 
 - The whole CSS workflow as suggested by buildexcellentwebsit.es
 - Accessible site navigation, editable in `src/_data/navigation.js`
@@ -48,9 +31,6 @@ https://eleventy-excellent.netlify.app/
 - Accessible blog pagination
 - A styleguide™
 
-## First steps
-
-[Read the Get started docs!](https://eleventy-excellent.netlify.app/get-started/)
 
 ## Development
 
@@ -76,10 +56,6 @@ Minify JS, CSS and HTML.
 npm run build
 ```
 
-## Built with Eleventy Excellent
-
-[Sites that are based on / built with Eleventy Excellent. ](https://eleventy-excellent.netlify.app/built-with/)
-Add your site by submitting a pull request! :)
 
 ## Credits and Thank yous
 
@@ -134,16 +110,15 @@ The style guide was inspired by a [great talk on the Eleventy Meetup](https://ww
 
 **Aleksandr Hovhannisyan**
 
-Aleksandr seems to value a well-structured project just as much as I do. It was the repo from aleksandrhovhannisyan.com that inspired me to write the article [Organizing the Eleventy config file](https://www.lenesaile.com/en/blog/organizing-the-eleventy-config-file/). The 301 redirect solution I'm using is from Aleksandr's article.
+Aleksandr seems to value a well-structured project just as much as I do. It was the repo from aleksandrhovhannisyan.com that inspired Lene to write the article [Organizing the Eleventy config file](https://www.lenesaile.com/en/blog/organizing-the-eleventy-config-file/). The 301 redirect solution implemented using is from Aleksandr's article.
 
 - https://github.com/AleksandrHovhannisyan
 - https://www.aleksandrhovhannisyan.com/blog/eleventy-netlify-redirects/
 
 **Manuel Matuzović**
 
-Manuel is an accessibility expert. The menu I was using as default up to v2, is very much inspired by an article Manuel wrote on web.dev.
+Manuel is an accessibility expert.
 
-- https://web.dev/website-navigation/
 - https://www.matuzo.at/
 
 **Bernard Nijenhuis**
