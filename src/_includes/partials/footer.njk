@@ -13,12 +13,7 @@
         {% for item in navigation.bottom %}
           <a
             href="{{ item.url }}"
-            {{
-              helpers.getLinkActiveState(item.url,
-              page.url)
-              |
-              safe
-            }}
+            {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
             >{{ item.text }}</a
           >
         {% endfor %}
@@ -48,10 +43,10 @@
     </div>
 
     <div class="text-center mt-m-l">
-      <a class="creator text-step-min-1" href="{{ meta.creator.website }}"
+      <a class="creator text-step-min-1" href="{{ meta.creator.website }}" rel="me"
         >Made with <span>{% include 'svg/heart.svg' %}</span> by
         {{ meta.creator.name }}</a
-      >
+      > with <a href="https://www.11ty.dev/">Eleventy</a>
     </div>
   </div>
 </footer>
