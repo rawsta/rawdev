@@ -6,13 +6,13 @@ const esbuild = require('esbuild');
 
 /** Removes all tags from an HTML string. */
 const stripHtml = str => {
-  throwIfNotType(str, 'string');
-  return str.replace(/<[^>]+>/g, '');
+  throwIfNotType( str, 'string' );
+  return str.replace( /<[^>]+>/g, '' );
 };
 
 /** Formats the given string as an absolute url. */
 const toAbsoluteUrl = url => {
-  throwIfNotType(url, 'string');
+  throwIfNotType( url, 'string');
   // Replace trailing slash, e.g., site.com/ => site.com
   const siteUrl = site.url.replace(/\/$/, '');
   // Replace starting slash, e.g., /path/ => path/
@@ -22,47 +22,47 @@ const toAbsoluteUrl = url => {
 };
 
 /** Converts the given date string to ISO8610 format. */
-const toISOString = dateString => dayjs(dateString).toISOString();
+const toISOString = dateString => dayjs( dateString ).toISOString();
 
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
-const formatDate = (date, format) => dayjs(date).format(format);
+const formatDate = ( date, format ) => dayjs( date ).format(format );
 
-const minifyCss = code => new CleanCSS({}).minify(code).styles;
+const minifyCss = code => new CleanCSS({}).minify( code ).styles;
 
-const minifyJs = async (code, ...rest) => {
+const minifyJs = async ( code, ...rest ) => {
   const callback = rest.pop();
   const cacheKey = rest.length > 0 ? rest[0] : null;
 
   try {
-    if (cacheKey && jsminCache.hasOwnProperty(cacheKey)) {
-      const cacheValue = await Promise.resolve(jsminCache[cacheKey]); // Wait for the data, wrapped in a resolved promise in case the original value already was resolved
-      callback(null, cacheValue.code); // Access the code property of the cached value
+    if ( cacheKey && jsminCache.hasOwnProperty( cacheKey ) ) {
+      const cacheValue = await Promise.resolve( jsminCache[cacheKey] ); // Wait for the data, wrapped in a resolved promise in case the original value already was resolved
+      callback( null, cacheValue.code ); // Access the code property of the cached value
     } else {
-      const minified = esbuild.transform(code, {
+      const minified = esbuild.transform( code, {
         minify: true
       });
-      if (cacheKey) {
-        jsminCache[cacheKey] = minified; // Store the promise which has the minified output (an object with a code property)
+      if ( cacheKey ) {
+        jsminCache[cacheKey] = minified; // Store the promise which has the minified output (an object with a code property )
       }
-      callback(null, (await minified).code); // Await and use the return value in the callback
+      callback(null, (await minified).code ); // Await and use the return value in the callback
     }
-  } catch (err) {
-    console.error('jsmin error: ', err);
-    callback(null, code); // Fail gracefully.
+  } catch ( err ) {
+    console.error('jsmin error: ', err );
+    callback( null, code ); // Fail gracefully.
   }
 };
 
 // source: https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
-const splitlines = (input, maxCharLength) => {
+const splitlines = ( input, maxCharLength ) => {
   const parts = input.split(' ');
-  const lines = parts.reduce(function (acc, cur) {
-    if (!acc.length) {
+  const lines = parts.reduce( function ( acc, cur ) {
+    if ( !acc.length ) {
       return [cur];
     }
 
     let lastOne = acc[acc.length - 1];
 
-    if (lastOne.length + cur.length > maxCharLength) {
+    if ( lastOne.length + cur.length > maxCharLength ) {
       return [...acc, cur];
     }
 
@@ -75,7 +75,7 @@ const splitlines = (input, maxCharLength) => {
 };
 
 const shuffleArray = array => {
-  return array.sort(() => Math.random() - 0.5);
+  return array.sort( () => Math.random() - 0.5 );
 };
 
 module.exports = {

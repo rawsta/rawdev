@@ -1,4 +1,5 @@
-// CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
+// CSS and JavaScript as first-class citizens in Eleventy:
+// https://pepelsbey.dev/articles/eleventy-css-js/
 
 const postcss = require('postcss');
 const postcssImport = require('postcss-import');

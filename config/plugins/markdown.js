@@ -1,15 +1,15 @@
-const markdownIt = require('markdown-it');
-const markdownItPrism = require('markdown-it-prism');
-const markdownItAnchor = require('markdown-it-anchor');
-const markdownItClass = require('@toycode/markdown-it-class');
-const markdownItLinkAttributes = require('markdown-it-link-attributes');
-const markdownItEmoji = require('markdown-it-emoji').full;
-const markdownItEleventyImg = require('markdown-it-eleventy-img');
-const markdownItFootnote = require('markdown-it-footnote');
-const markdownitMark = require('markdown-it-mark');
-const markdownitAbbr = require('markdown-it-abbr');
-const {slugifyString} = require('../utils');
-const path = require('path');
+const markdownIt = require( 'markdown-it' );
+const markdownItPrism = require( 'markdown-it-prism' );
+const markdownItAnchor = require( 'markdown-it-anchor' );
+const markdownItClass = require( '@toycode/markdown-it-class' );
+const markdownItLinkAttributes = require( 'markdown-it-link-attributes' );
+const markdownItEmoji = require( 'markdown-it-emoji' ).full;
+const markdownItEleventyImg = require( 'markdown-it-eleventy-img' );
+const markdownItFootnote = require( 'markdown-it-footnote' );
+const markdownitMark = require( 'markdown-it-mark' );
+const markdownitAbbr = require( 'markdown-it-abbr' );
+const {slugifyString} = require( '../utils' );
+const path = require( 'path' );
 
 const markdownLib = markdownIt({
   html: true,
@@ -17,25 +17,25 @@ const markdownLib = markdownIt({
   linkify: true,
   typographer: true
 })
-  .disable('code')
-  .use(markdownItPrism, {
+  .disable( 'code' )
+  .use( markdownItPrism, {
     defaultLanguage: 'plaintext'
   })
-  .use(markdownItAnchor, {
+  .use( markdownItAnchor, {
     slugify: slugifyString,
     tabIndex: false,
     permalink: markdownItAnchor.permalink.headerLink({
       class: 'heading-anchor'
     })
   })
-  .use(markdownItClass, {
+  .use( markdownItClass, {
     ol: 'list',
     ul: 'list'
   })
-  .use(markdownItLinkAttributes, [
+  .use( markdownItLinkAttributes, [
     {
       // match external links
-      matcher(href) {
+      matcher( href ) {
         return href.match(/^https?:\/\//);
       },
       attrs: {
@@ -43,8 +43,8 @@ const markdownLib = markdownIt({
       }
     }
   ])
-  .use(markdownItEmoji)
-  .use(markdownItEleventyImg, {
+  .use( markdownItEmoji )
+  .use( markdownItEleventyImg, {
     imgOptions: {
       widths: [440, 880, 1024],
       urlPath: '/assets/images/',
@@ -57,23 +57,23 @@ const markdownLib = markdownIt({
       sizes: '90vw'
     },
     // prepend src for markdown images
-    resolvePath: (filepath, env) => {
-      return path.join('src', filepath);
+    resolvePath: ( filepath, env) => {
+      return path.join( 'src', filepath );
     },
-    renderImage(image, attributes) {
+    renderImage( image, attributes ) {
       const [Image, options] = image;
       const [src, attrs] = attributes;
 
-      Image(src, options);
+      Image( src, options );
 
-      const metadata = Image.statsSync(src, options);
-      const imageMarkup = Image.generateHTML(metadata, attrs, {
+      const metadata = Image.statsSync( src, options );
+      const imageMarkup = Image.generateHTML( metadata, attrs, {
         whitespaceMode: 'inline'
       });
 
       const imageElement = attrs.title
         ? `<figure class="flow">
-			${imageMarkup}
+      ${imageMarkup}
 					<figcaption>${attrs.title}</figcaption>
 				</figure>`
         : `${imageMarkup}`;
@@ -81,8 +81,8 @@ const markdownLib = markdownIt({
       return imageElement;
     }
   })
-  .use(markdownItFootnote)
-  .use(markdownitMark)
-  .use(markdownitAbbr);
+  .use( markdownItFootnote )
+  .use( markdownitMark )
+  .use( markdownitAbbr );
 
 module.exports = markdownLib;
