@@ -6,9 +6,7 @@ date: 2019-11-05
 #category: javascript
 ##template: post
 #slug: serviceworker-und-pwa
-tags:
-    - serviceworker
-    - pwa
+tags: [ 'serviceworker', 'pwa' ]
 ---
 
 # ServiceWorker (mit Workbox)
@@ -148,7 +146,7 @@ navigator.serviceWorker.addEventListener('controllerchange', () => {
 
 ## Fetch API
 
-Die [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) ist eine neue Alternative zum bekannten [XMLHttp​Request(XHR)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), bietet jedoch einen mächtigeren und flexibleren Funktionsumfang. Fetch bietet ein allgemeines Interface mit `Request` und `Response` Objekten und kann von Service Workern, Cache API, etc angesprochen werden. Die Fetch API bietet eine `.fetch()` Methode mit der man auf einfachem Weg asynchrone Netzwerkanfragen senden kann.
+Die [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) ist eine neue Alternative zum bekannten [XMLHttpRequest(XHR)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), bietet jedoch einen mächtigeren und flexibleren Funktionsumfang. Fetch bietet ein allgemeines Interface mit `Request` und `Response` Objekten und kann von Service Workern, Cache API, etc angesprochen werden. Die Fetch API bietet eine `.fetch()` Methode mit der man auf einfachem Weg asynchrone Netzwerkanfragen senden kann.
 
 > Leider ist der Internet Explorer wieder ein Spielverderber und kennt fetch nicht wirklich.  <br>
 > [Github hat dafür einen guten Polyfill](https://github.com/github/fetch)

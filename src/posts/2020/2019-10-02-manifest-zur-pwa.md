@@ -6,10 +6,7 @@ description: 'Verschiedene Windows Programme, die ich benutze oder benutzt habe.
 #slug: manifest-zur-pwa
 #category: javascript
 #template: post
-tags:
--   pwa
--   serviceworker
--   wip
+tags: [ 'pwa', serviceworker', wip' ]
 ---
 
 

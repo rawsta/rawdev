@@ -5,9 +5,7 @@ title: Das Genesis Framework
 date: 2019-12-12
 #template: post
 #slug: genesis-framework
-tags:
-    - wordpress
-    - themes
+tags: [ 'wordpress', 'themes' ]
 ---
 
 # Genesis Framework

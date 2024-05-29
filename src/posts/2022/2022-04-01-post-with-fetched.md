@@ -1,7 +1,7 @@
 ---
 title: 'Post with fetched content'
 description: 'Eleventy Fetch fetches and caches resources - at configurable intervals. In this example I am fetching my public repositories with a cache duration of 1 day.'
-date: 2022-08-28
+date: 2022-04-01
 tags: ['fetch', 'feature']
 ---
 
@@ -13,7 +13,7 @@ In this case, my public repositories (with more than zero stargazer) and a cache
 Endpoint editable in `_data/github.js.`
 
 {% for repository in github  %}
-{% if repository.stargazers_count > 10 %}
+{% if repository.stargazers_count > 0 %}
 
 ## [{{ repository.name }}]({{ repository.html_url }})
 

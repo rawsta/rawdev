@@ -6,10 +6,7 @@ date: 2019-04-20
 #category: server
 #template: post
 #slug: php-und-opcache
-tags:
-  - php
-  - opcache
-  - server
+tags: [ 'php', 'opcache', 'server' ]
 ---
 
 # OpCache Einstellungen
@@ -22,7 +19,7 @@ Ich bin auf die schöne Zusammenstellung/Erklärung von ["Steven Corona"](https:
 
 *Das Angaben wie opcache.enable aktiv sein müssen, sollte klar sein.*
 
-Hier also meine Version von Steve’s Erklärungen.
+Hier also meine Version von Steve's Erklärungen.
 
 `opcache.revalidate_freq` -
 Gibt an, wie oft (in Sekunden) der Code Cache erneuert werden soll. Der Cache wird ungültig und überprüft ob der Code sich geändert hat. 0 heisst in dem Fall, das bei jedem Aufruf der PHP code überprüft wird was sehr viele stat syscalls verursacht.  In der DEV Umgebung kann man das ruhig auf 0 setzen. In der PROD Umgebung ist das irrelevant, wegen der nächsten Einstellung
@@ -37,7 +34,7 @@ Yes, this is a pain in the ass, but you should use it. Why? While you're updatin
 `opcache.max_accelerated_files` -
 Gibt an wieviele PHP maximal im Speicher gehalten werden sollen. Hier solltet Ihr drauf achten das die Anzahl der Dateien in euren Projekten unterhalb dieses Wertes liegt.
 
-*Mit `“find . -type f -print | grep php | wc -l”` könnt Ihr schnell die Anzahl der Dateien berechnen lassen.
+*Mit `"find . -type f -print | grep php | wc -l"` könnt Ihr schnell die Anzahl der Dateien berechnen lassen.
 
 Controls how many PHP files, at most, can be held in memory at once. It's important that your project has LESS FILES than whatever you set this at. My codebase has ~6000 files, so I use the prime number 7963 for maxacceleratedfiles.
 
@@ -52,15 +49,15 @@ Mit der Funktion `opcachegetstatus()` könnt Ihr überprüfen wieviel opcache ve
 `opcache.interned_strings_buffer` -
 
 Standart ist **4** für **4MB**. Da kann man entspannte **16(MB)** reinsetzen.
-PHP nutzt sogenanntes “string interning” um die Leistung zu verbessern.
+PHP nutzt sogenanntes "string interning" um die Leistung zu verbessern.
 > _Als Beispiel:__
-> Du hast 1000mal den string `“foobar”` in deinem Code. Intern speichert PHP `1 *immutable* Variable` für den Wert und für die anderen 999mal wird ein Pointer auf die Variable gesetzt.
+> Du hast 1000mal den string `"foobar"` in deinem Code. Intern speichert PHP `1 *immutable* Variable` für den Wert und für die anderen 999mal wird ein Pointer auf die Variable gesetzt.
 
 Diese Einstellung geht noch einen Schritt weiter: Anstatt einen Pool dieser unveränderlichen Strings für jeden einzelnen php-fpm-Prozess zu haben, werden sie mit dieser Einstellung auf ALLE Ihre php-fpm-Prozesse verteilt. Das spart Speicher und verbessert die Leistung, besonders bei großen Anwendungen.
 
 `opcache.fast_shutdown` -
 
-Eine weitere interessante Funktion ohne dokumentation. "Erlaubt schnelleres herunterfahren". Oh okay. Als wenn mir das helfen würde. 
+Eine weitere interessante Funktion ohne dokumentation. "Erlaubt schnelleres herunterfahren". Oh okay. Als wenn mir das helfen würde.
 Damit wird ein schnellerer Mechanismus zum Aufrufen der Deconstructors in Ihrem Code am Ende einer einzelnen Anfrage bereitgestellt, um die Antwort zu beschleunigen und die php-Worker zu recyceln, damit sie schneller für die nächste eingehende Anfrage bereit sind. Setzen Sie ihn auf 1 und schalten Sie ihn ein.
 
 ### TL;DR

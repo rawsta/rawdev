@@ -6,9 +6,7 @@ description: 'Verschiedene Windows Programme, die ich in den vergangenen Jahren 
 date: 2019-09-16
 #template: post
 #slug: windows-tools
-tags:
-    - windows
-    - tools
+tags: [ 'windows', 'tools' ]
 ---
 # Rawsta's Windows List
 
@@ -108,7 +106,7 @@ more coming _sooner or later_
 - [QTTabBar](http://qttabbar.wikidot.com/qttabbar) -> Extends Explorer by tabs and extra folder views.
 - [7+ Taskbar Tweaker](https://tweaker.rammichael.com/) -> Customize the Windows taskbar with dozens of exclusive options.
 - [TranslucentTB](https://translucenttb.github.io/) -> Makes the Windows taskbar translucent/transparent.
-- [QuickLook](https://github.com/QL-Win/QuickLook) -> Bring macOS “Quick Look” feature to Windows.
+- [QuickLook](https://github.com/QL-Win/QuickLook) -> Bring macOS "Quick Look" feature to Windows.
 - [Display Fusion](https://www.displayfusion.com/) -> Multi-monitor enhancements and tools.
 
 ## E-Mail

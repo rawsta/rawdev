@@ -6,9 +6,7 @@ description: 'Kleines Markdown Cheatsheet, für die Seite.'
 date: 2019-01-03
 #template: post
 #slug: markdown-cheatsheet
-tags:
-  - markdown
-  - cheatsheet
+tags: [ 'markdown', 'cheatsheet' ]
 ---
 
 # Markdown Cheatsheet
@@ -22,7 +20,7 @@ Wer es ganz genau haben möchte, kann sich auch [John Gruber's Original Spezifik
 Warum noch ein Cheatsheet? <br>
 [Es](http://github.github.com/github-flavored-markdown/) [gibt](https://www.markdownguide.org/cheat-sheet/) [bereits](https://github.com/im-luka/markdown-cheatsheet) [unzählige](http://mdcheatsheet.com), [umfangreichere](https://markdown.land/markdown-cheat-sheet) [Cheatsheets](http://mdcheatsheet.com).
 
-Dieses Cheatsheet ist speziell auf diese Seite zu geschnitten. Gerade die Einbindungen von z.B. [YouTube Videos](#videos) sind hier etwas anders. 
+Dieses Cheatsheet ist speziell auf diese Seite zu geschnitten. Gerade die Einbindungen von z.B. [YouTube Videos](#videos) sind hier etwas anders.
 
 > TODO: Umstellen von Highlight.js zu Prism.js
 > TODO: Verfügbare Funktionen abbilden
@@ -335,7 +333,7 @@ weitere Codes auf [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
 ## Tabellen
 
-Tabellen sind zwar nicht Bestandteil der Markdown spec, aber die meisten Renderer unterstützen diese. 
+Tabellen sind zwar nicht Bestandteil der Markdown spec, aber die meisten Renderer unterstützen diese.
 
 ```no-highlight
 Doppelpunkte werden für die Ausrichtung der Tabelle benutzt.
@@ -493,12 +491,12 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 <pre lang="no-highlight"><code>
 ```no-highlight
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+{% youtube 'JqnMI1AXl6w', 'Andy Bell - Be the browsers mentor, not its micromanager' %}
 ```
 </code></pre>
 
 **Ausgabe:**
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+{% youtube 'JqnMI1AXl6w', 'Andy Bell - Be the browsers mentor, not its micromanager' %}
 
 Einbindung von Videos ist eigentlich nicht vorgesehen. Man kann jedoch ein Bild einfügen und das Video verlinken.
 
