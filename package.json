@@ -3,10 +3,10 @@
   "version": "2.2.6",
   "description": "Just another side-project which may result in a real page.",
   "author": {
-		"name": "Sebastian Fiele",
-		"url": "https://rawsta.de/",
-		"email": "rawsta@rawsta.de"
-	},
+    "name": "Sebastian Fiele",
+    "url": "https://rawsta.de/",
+    "email": "rawsta@rawsta.de"
+  },
   "license": "ISC",
   "engines": {
     "node": ">=18.x.x"
@@ -41,6 +41,9 @@
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "eleventy-plugin-toc": "^1.1.5",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-deflist": "^3.0.0",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {

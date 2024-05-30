@@ -1,5 +1,5 @@
 ---
-font: "Inter, 'Red Hat Display', Ubuntu" # These get created in development, you must have the font installed on your system.
+font: "Inter, Ubuntu" # These get created in development, you must have the font installed on your system.
 background: '#292424'
 text: '#f8e7e7'
 colors: ['#ff8300', '#d65700', '#ac2c00', '#830000']
@@ -19,6 +19,8 @@ eleventyExcludeFromCollections: true
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
+
+		<!-- Set startpoint depending on line length -->
 		{% set titleInLines = post.data.title | splitlines(22) %}
 		{% set numberOfLines = titleInLines.length %}
 		{% if numberOfLines == 1 %}
@@ -48,13 +50,13 @@ eleventyExcludeFromCollections: true
 		<!-- date -->
 		<text
 			font-family="{{ font }}, sans-serif"
-			font-size="24"
+			font-size="36"
 			font-weight="900"
 			fill="{{ text }}"
 			letter-spacing="-1"
 		>
 			<tspan x="160" y="{{ verticalStartingPoint - 120 }}">
-				{{ post.date | formatDate('DD / MM / YYYY') }}
+				{{ post.date | formatDate('DD/MM/YYYY') }}
 			</tspan>
 		</text>
 
@@ -62,13 +64,13 @@ eleventyExcludeFromCollections: true
 		<text
 			id="text"
 			font-family="{{ font }}, sans-serif"
-			font-size="80"
+			font-size="101"
 			font-weight="900"
 			fill="{{ text }}"
-			letter-spacing="-3"
+			letter-spacing="-0.03em"
 		>
 			{% for line in titleInLines %}
-			<tspan x="160" y="{{ verticalStartingPoint - 20 + loop.index0 * 85 }}">
+			<tspan x="160" y="{{ verticalStartingPoint - 10 + loop.index0 * 85 }}">
 				{{ line }}
 			</tspan>
 			{% endfor %}

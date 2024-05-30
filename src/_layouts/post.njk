@@ -8,28 +8,21 @@ schema: blog
     <h1 class="gradient-text-linear">{{ title }}</h1>
 
     {% if image %}
-      <!-- image -->
       {% eleventyImage image, alt or title, null, "eager", "feature" %}
     {% endif %}
-    {%
-      if
-      credit
-    %}
-      <!-- credit -->
+    {% if credit %}
       <p class="credit feature | text-step-min-1">© {{ credit }}</p>
     {% endif %}
 
     <p class="meta | cluster" style="--gutter: var(--space-xs-s)">
       <!-- date -->
       {% set definedDate = date %} {% include "components/date.njk" %}
-      {%
-        if tags.length >
-        1
-      %}
-        <!-- tags -->
-        {% for tag in tags %}{% if tag != "posts" %}
-          <a class="button post-tag" href="/tags/{{ tag }}"> {{ tag }} </a>
-        {% endif %}{% endfor %}
+      {% if tags.length > 1%}
+        {% for tag in tags %}
+          {% if tag != "posts" %}
+            <a class="button post-tag" href="/tags/{{ tag }}"> {{ tag }} </a>
+          {% endif %}
+        {% endfor %}
       {% endif %}
     </p>
 
@@ -39,12 +32,11 @@ schema: blog
 
   <!--  h-card infos: https://indieweb.org/authorship -->
   <div hidden class="h-entry">
+    <img class="u-author h-card" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}" alt="{{ meta.author.name }}" />
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
     <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
-    <img
-      class="u-author h-card"
-      src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
-      alt="{{ meta.author.name }}"
-    />
   </div>
+</article>
+<aside>
+  {{ content | toc | safe }}
 </article>

@@ -1,6 +1,6 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Rawsta Dev ',
+  siteName: 'Rawsta ',
   siteDescription:
     'Ein weiteres Projekt, um mit etwas neuem zu spielen.',
   siteType: 'Person', // schema
@@ -10,14 +10,16 @@ module.exports = {
   author: {
     name: 'Sebastian Fiele',
     avatar: '/favicon.png',
-    email: 'rawsta@rawsta.de', 
-    website: 'https://www.rawsta.de' 
+    email: 'rawsta@rawsta.de',
+    website: 'https://www.rawsta.de'
   },
   creator: {
     name: 'Sebastian Fiele',
     email: 'rawsta@rawsta.de',
     website: 'https://www.rawsta.de',
-    social: 'https://www.github.com/rawsta'
+    social: '@rawsta@social.linux.pizza',
+    codepen: 'rawsta',
+    github: 'rawsta'
   },
   themeColor: '#FF8300', //  Manifest: defines the default theme color for the application
   themeBgColor: '#FBFBFB', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
@@ -83,7 +85,7 @@ module.exports = {
   },
   viewRepo: {
     allow: true,
-    infoText: 'Schau dir den Code auf GitHub an.'
+    infoText: 'Code auf GitHub'
   },
   easteregg: true
 };

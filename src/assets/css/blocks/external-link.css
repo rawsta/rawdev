@@ -1,13 +1,13 @@
 article
   [href^='http']:not([href*='localhost:8080']):not(
-    [href*='eleventy-excellent.netlify.app']
+    [href*='rawsta.de']
   ):not(.button) {
   padding-inline-end: 0.8em;
 }
 
 article
   [href^='http']:not([href*='localhost:8080']):not(
-    [href*='eleventy-excellent.netlify.app']
+    [href*='rawsta.de']
   ):not(.no-indicator)::after {
   position: absolute;
   display: inline-block;
@@ -18,7 +18,7 @@ article
   background-position: center;
   background-size: 60% auto;
   /* alternative text rules */
-  content: '(enlace externo)';
+  content: '(exteral link)';
   overflow: hidden;
   white-space: nowrap;
   text-indent: 1em; /* the width of the icon */

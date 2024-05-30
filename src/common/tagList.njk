@@ -25,15 +25,10 @@ eleventyComputed:
 
 <ul class="taglist | my-s-m cluster" role="list">
   {% for tag in collections.tagList %}
- <li><a
+  <li><a
     href="/tags/{{ tag }}"
     class="button"
-    {{
-    helpers.getLinkActiveState('/tags/' + tag,
-    page.url)
-    |
-    safe
-    }}
+    {{helpers.getLinkActiveState('/tags/' + tag, page.url) | safe}}
   >
     {{ tag }}
   </a></li>

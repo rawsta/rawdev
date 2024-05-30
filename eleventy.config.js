@@ -53,6 +53,7 @@ const pluginRss = require( '@11ty/eleventy-plugin-rss' );
 const inclusiveLangPlugin = require( '@11ty/eleventy-plugin-inclusive-language' );
 const bundlerPlugin = require( '@11ty/eleventy-plugin-bundle' );
 const syntaxHighlight = require( '@11ty/eleventy-plugin-syntaxhighlight' );
+const pluginTOC  = require( 'eleventy-plugin-toc');
 
 const markdownLib = require( './config/plugins/markdown.js' );
 const {slugifyString} = require( './config/utils/index.js' );
@@ -98,7 +99,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addNunjucksAsyncShortcode( 'eleventyImage', imageShortcode );
   eleventyConfig.addShortcode( 'youtube', liteYoutube );
   eleventyConfig.addShortcode( 'include_raw', includeRaw );
-  eleventyConfig.addShortcode( 'year', () => `${new Date().getFullYear()}` ); // current year, by stephanie eckles
+  eleventyConfig.addShortcode( 'year', () => `${new Date().getFullYear()}` );
 
 
   // 	--- [ CUSTOM TRANSFORMS ] ---
@@ -130,6 +131,7 @@ module.exports = eleventyConfig => {
     alwaysWrapLineHighlights: true,
   });
   eleventyConfig.addPlugin( pluginRss );
+  eleventyConfig.addPlugin( pluginTOC );
   eleventyConfig.addPlugin( inclusiveLangPlugin );
   eleventyConfig.addPlugin( bundlerPlugin );
   eleventyConfig.setLibrary( 'md', markdownLib );
