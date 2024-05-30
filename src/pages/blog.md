@@ -8,4 +8,4 @@ pagination:
 permalink: 'blog/{% if pagination.pageNumber >=1  %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 ---
 
-Aktuell gibt es {{ collections.posts.length }} Artikel in meiner Sammlung.
+### Aktuell gibt es {{ collections.posts.length }} Artikel in der Sammlung.

@@ -7,6 +7,7 @@ date: 2019-04-20
 #template: post
 #slug: php-und-opcache
 tags: [ 'php', 'opcache', 'server' ]
+toc: true
 ---
 
 # OpCache Einstellungen
