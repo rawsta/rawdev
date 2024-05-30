@@ -25,14 +25,25 @@ customGradients:
     <h1 class="gradient-text-linear">{{ title }}</h1>
 
     <p>
-      All design tokens can be found in <code>src/_data/designTokens</code>. <br />
-      This includes all baseline fonts, colors, sizes, and spacing.
+    Wie schon erwähnt, ist diese Seite ein kleiner Spielplatz um neue Sachen auszuprobieren. <br>
+    Da die ganze Seite bereits ein gutes Stück von [Andy Bell](https://andy-bell.co.uk) und [BuildExcellentWebsit.es](https://buildexcellentwebsit.es) "inspiriert" wurde,
+    lag es auch nahe _für mich_ neue Design techniken auszuprobieren.
+    </p>
+    <p>
+      <strong>Design Tokens</strong><br>
+      Design Tokens sind zentral definierte Werte, die für das Design und die Darstellung einer Anwendung oder Website verantwortlich sind. Diese Tokens dienen als Referenz für Design-Entscheidungen und erlauben eine einheitliche und konsistente Darstellung der Benutzeroberfläche.
+
+      Alle Design Tokens liegen als <code>JSON</code> im Ordner <code>src/_data/designTokens</code>. <br />
+      Dort sind festgelegt: Farben, Schriftarten, Laufweite, Zeilenhöhe, Abstände und Viewports für Mediaqueries.
+    </p>
+    <p>
+      Auf dieser Seite werden die Werte aus den Dateien ausgelesen und angezeigt. <br>
     </p>
   </header>
 
   <div class="full colors | section">
     <section class="section__inner wrapper flow region">
-      <h2 class="heading-line">Colors</h2>
+      <h2 class="heading-line">Farben</h2>
 
       <p>{{ designTokens.colors.description }}</p>
 
@@ -48,8 +59,8 @@ customGradients:
         {%- endfor -%}
       </ul>
 
-      <h3 class="heading-line | mt-l-xl">Custom colors</h3>
-      <p>in <code>variables.css</code>. Some only change for dark theme.</p>
+      <h3 class="heading-line | mt-l-xl">Sonderfarben</h3>
+      <p>in <code>variables.css</code>. Manche werden nur für das helle/dunkle Theme verwendet.</p>
 
       <ul role="list">
         {%- for color in customColors -%}
@@ -62,7 +73,7 @@ customGradients:
         {%- endfor -%}
       </ul>
 
-      <h3 class="heading-line | mt-l-xl">Gradients</h3>
+      <h3 class="heading-line | mt-l-xl">Farbverläufe</h3>
 
       <ul role="list">
         {%- for gradient in customGradients -%}
@@ -81,7 +92,7 @@ customGradients:
   </div>
 
   <section class="fonts | flow region">
-    <h2 class="heading-line">Fonts</h2>
+    <h2 class="heading-line">Schriften</h2>
 
     <ul class="fonts flow">
       {%- for font in designTokens.fonts.items -%}
@@ -90,7 +101,7 @@ customGradients:
             {{ font.name }}
           </h3>
           <p>{{ font.description }}</p>
-          <p><strong>Font Families</strong>: {{ font.value | join(', ') }}</p>
+          <p><strong>Schriftarten</strong>: {{ font.value | join(', ') }}</p>
           <code>var(--font-{{ font.name | slugify }})</code>
         </li>
       {%- endfor -%}
@@ -99,13 +110,12 @@ customGradients:
 
   <div class="full sizes | section">
     <section class="section__inner wrapper flow region">
-      <h2 class="heading-line">Sizes</h2>
+      <h2 class="heading-line">Schriftgrößen</h2>
 
       <p>
-        {{ designTokens.textSizes.description }}. Fluid type and space scales were
-        <a href="{{ designTokens.textSizes.meta.scaleGenerator }}"
-          >generated with Utopia</a
-        >.
+        {{ designTokens.textSizes.description }}. "Fluid type" und "Abstandskalen" wurden
+        <a href="{{ designTokens.textSizes.meta.scaleGenerator }}" title="Fluid type scale generator">
+          mit Utopia generiert.</a>.
       </p>
 
       <table class="sizes flow">
@@ -116,7 +126,7 @@ customGradients:
             </th>
             <td>
               <span class="flow">
-                <p>{{ size.min }}px to {{ size.max }}px</p>
+                <p>{{ size.min }}px bis {{ size.max }}px</p>
                 <code>var(--size-{{ size.name | slugify }})</code>
               </span>
             </td>
@@ -132,12 +142,12 @@ customGradients:
   </div>
 
   <section class="spacing | flow region">
-    <h2 class="heading-line">Spacing</h2>
+    <h2 class="heading-line">Abstände</h2>
 
     <p>
-      {{ designTokens.spacing.description }}<br />
-      Fluid type and space scales were
-      <a href="{{ designTokens.spacing.meta.scaleGenerator }}">generated with Utopia</a>.
+      {{ designTokens.textSizes.description }}. "Fluid type" und "Abstandskalen" wurden
+      <a href="{{ designTokens.textSizes.meta.scaleGenerator }}" title="Fluid type scale generator">
+        mit Utopia generiert.</a>.
     </p>
 
     <table class="spacing flow">
@@ -148,7 +158,7 @@ customGradients:
           </th>
           <td>
             <span class="flow">
-              <p>{{ space.min }}px to {{ space.max }}px</p>
+              <p>{{ space.min }}px bis {{ space.max }}px</p>
               <code>var(--space-{{ space.name | slugify }})</code>
             </span>
           </td>

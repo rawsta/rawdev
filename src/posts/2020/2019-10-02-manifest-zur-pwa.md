@@ -1,10 +1,10 @@
 ---
 title: Das Manifest zur PWA
-date: 2019-10-02
-description: 'Verschiedene Windows Programme, die ich benutze oder benutzt habe.'
-#cover: /assets/manifest-title.jpg
+date: 2020-10-02
+description: 'Das Web-App-Manifest kann dem Browser mitteilen, wie mit Inhalten umgegangen werden soll. Nicht nur für PWAs relevant.'
+cover: /assets/manifest-title.jpg
+category: javascript
 #slug: manifest-zur-pwa
-#category: javascript
 #template: post
 tags: [ 'pwa', serviceworker', wip' ]
 ---

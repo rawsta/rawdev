@@ -12,3 +12,14 @@ module.exports = async function () {
 
   return data;
 };
+
+/* USAGE:
+{% for repository in github  %}
+
+## [{{ repository.name }}]({{ repository.html_url }})
+
+**{{ repository.stargazers_count }} GitHub stars**
+{{ repository.description }}
+
+{% endfor %}
+*/

@@ -1,9 +1,9 @@
 ---
 title: ServiceWorker und PWA
 description: 'Was macht der ServiceWorker innerhalb einer Progressive Web App'
-date: 2019-11-05
-#cover: /assets/serviceworker-title.jpg
-#category: javascript
+date: 2020-09-05
+cover: /assets/serviceworker-title.jpg
+category: javascript
 ##template: post
 #slug: serviceworker-und-pwa
 tags: [ 'serviceworker', 'pwa' ]
@@ -12,7 +12,7 @@ tags: [ 'serviceworker', 'pwa' ]
 # ServiceWorker (mit Workbox)
 
 
-##### Table of Contents
+<!-- ##### Table of Contents
 - [Funktionsweise](#funktionsweise)
 - [Was ist ein ServiceWorker?](#was-ist-ein-serviceworker?)
 - [skipWaiting() / clients.claim()](#skipwaiting--clientsclaim)
@@ -29,7 +29,7 @@ tags: [ 'serviceworker', 'pwa' ]
 - [Runtime caching](#runtime-caching)
 - [Die verschiedenen Strategien](#die-verschiedenen-strategien)
 - [Workbox Plugins](#workbox-plugins)
-- [Tipps und Tricks](#tipps-und-tricks)
+- [Tipps und Tricks](#tipps-und-tricks) -->
 
 
 ## Was ist ein ServiceWorker?
