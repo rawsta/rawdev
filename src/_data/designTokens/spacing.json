@@ -1,9 +1,9 @@
 {
-  "title": "Spacing",
-  "description": "Consistent spacing sizes, based on a ratio, with min and max sizes. This allows you to set spacing based on the context size. For example, min for mobile and max for desktop browsers.",
+  "title": "Abstände",
+  "description": "Eine minimale und maximale Textgröße ermöglicht es, je nach Kontextgröße die richtige Größe aus einem Verhältnis auszuwählen. Die minimalen und maximalen Größen sind in Pixeln angegeben und sollten je nach Kontext in entsprechende Größen umgewandelt werden.",
   "meta": {
     "scaleGenerator": "https://utopia.fyi/space/calculator/?c=320,18,1.2,1440,24,1.414,8,2,&s=0.75%7C0.5%7C0.25,2%7C3%7C5%7C8%7C13,s-l&g=s,l,xl,12",
-    "note": "I'm shifing the the scale so spaces don't get too big. XS is equal to 3XS."
+    "note": "Ich verschiebe den Maßstab, damit die Abstände nicht zu groß werden. XS ist gleich 3XS."
   },
   "items": [
     {

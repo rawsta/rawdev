@@ -1,6 +1,6 @@
 {
   "title": "Schriftgrößen",
-  "description": "A minimum and maximum text size size allows you to pick the right size from a ratio, depending on the context size. The min and max sizes are in pixels and should be converted to appropiate sizes, per context",
+  "description": "Eine minimale und maximale Textgröße ermöglicht es, je nach Kontextgröße die richtige Größe aus einem Verhältnis auszuwählen. Die minimalen und maximalen Größen sind in Pixeln angegeben und sollten je nach Kontext in entsprechende Größen umgewandelt werden.",
   "meta": {
     "scaleGenerator": "https://utopia.fyi/type/calculator/?c=320,18,1.2,1440,24,1.25,6,2,&s=0.75%7C0.5%7C0.25,2%7C3%7C5%7C8%7C13,s-l&g=s,l,xl,12"
   },

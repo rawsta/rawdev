@@ -26,17 +26,17 @@ customGradients:
 
     <p>
     Wie schon erwähnt, ist diese Seite ein kleiner Spielplatz um neue Sachen auszuprobieren. <br>
-    Da die ganze Seite bereits ein gutes Stück von [Andy Bell](https://andy-bell.co.uk) und [BuildExcellentWebsit.es](https://buildexcellentwebsit.es) "inspiriert" wurde,
-    lag es auch nahe _für mich_ neue Design techniken auszuprobieren.
+    Da die ganze Seite bereits ein gutes Stück von <a href="https://andy-bell.co.uk">Andy Bell</a> und <a href="https://buildexcellentwebsit.es">BuildExcellentWebsit.es</a> "inspiriert" wurde,
+    lag es auch nahe <em>für mich</em> neue Design techniken auszuprobieren.
     </p>
     <p>
       <strong>Design Tokens</strong><br>
       Design Tokens sind zentral definierte Werte, die für das Design und die Darstellung einer Anwendung oder Website verantwortlich sind. Diese Tokens dienen als Referenz für Design-Entscheidungen und erlauben eine einheitliche und konsistente Darstellung der Benutzeroberfläche.
-
-      Alle Design Tokens liegen als <code>JSON</code> im Ordner <code>src/_data/designTokens</code>. <br />
-      Dort sind festgelegt: Farben, Schriftarten, Laufweite, Zeilenhöhe, Abstände und Viewports für Mediaqueries.
     </p>
     <p>
+      Alle Design Tokens liegen als <code>JSON</code> im Ordner <code>src/_data/designTokens</code>. <br />
+      Dort sind festgelegt: Farben, Schriftarten, Laufweite, Zeilenhöhe, Abstände und Viewports für Mediaqueries.
+    <br>
       Auf dieser Seite werden die Werte aus den Dateien ausgelesen und angezeigt. <br>
     </p>
   </header>
@@ -60,14 +60,14 @@ customGradients:
       </ul>
 
       <h3 class="heading-line | mt-l-xl">Sonderfarben</h3>
-      <p>in <code>variables.css</code>. Manche werden nur für das helle/dunkle Theme verwendet.</p>
+      <p>aus der <code>variables.css</code>. <small>Manche werden nur für das helle/dunkle Theme verwendet.</small></p>
 
       <ul role="list">
         {%- for color in customColors -%}
           <li>
             <div style="background-color: var({{ color.property }})"></div>
             <p>
-              <code>{{ color.property }}</code>
+              <code>var({{ color.property }})</code>
             </p>
           </li>
         {%- endfor -%}
@@ -81,7 +81,7 @@ customGradients:
             <div style="background-image: var({{ gradient.property }})"></div>
 
             <p>
-              <code>{{ gradient.property }}</code>
+              <code>var({{ gradient.property }})</code>
               <br />
               <!-- <code>{{ color.value }}</code> -->
             </p>
@@ -113,9 +113,9 @@ customGradients:
       <h2 class="heading-line">Schriftgrößen</h2>
 
       <p>
-        {{ designTokens.textSizes.description }}. "Fluid type" und "Abstandskalen" wurden
+        {{ designTokens.textSizes.description }}<br><small> "Fluid type" und "Abstandskalen" wurden
         <a href="{{ designTokens.textSizes.meta.scaleGenerator }}" title="Fluid type scale generator">
-          mit Utopia generiert.</a>.
+          mit Utopia generiert.</a></small>
       </p>
 
       <table class="sizes flow">
@@ -145,9 +145,9 @@ customGradients:
     <h2 class="heading-line">Abstände</h2>
 
     <p>
-      {{ designTokens.textSizes.description }}. "Fluid type" und "Abstandskalen" wurden
-      <a href="{{ designTokens.textSizes.meta.scaleGenerator }}" title="Fluid type scale generator">
-        mit Utopia generiert.</a>.
+      {{ designTokens.textSizes.description }}<br><small> "Fluid type" und "Abstandskalen" wurden
+        <a href="{{ designTokens.textSizes.meta.scaleGenerator }}" title="Fluid type scale generator">
+          mit Utopia generiert.</a></small>
     </p>
 
     <table class="spacing flow">

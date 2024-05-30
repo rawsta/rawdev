@@ -4,23 +4,20 @@
   "items": [
     {
       "name": "Display",
-      "description": "Display font stack for headings and large text.",
+      "description": "'Schriftstapel' für Überschriften und großem Text.",
       "value": [
-        "Inter", 
-        "Redhat", 
-        "Segoe UI", 
-        "Roboto", 
-        "Helvetica Neue", 
-        "Arial", 
+        "Inter",
+        "Segoe UI",
+        "Helvetica Neue",
+        "Arial",
         "sans-serif"
       ]
     },
     {
       "name": "Base",
-      "description": "Base font stack for body text.",
+      "description": "'Schriftstapel' für den Inhalt.",
       "value": [
         "Outfit",
-        "Figtree",
         "Optima",
         "Candara",
         "Noto Sans",
@@ -29,12 +26,9 @@
     },
     {
       "name": "Mono",
-      "description": "Monospace font for code and preformatted text.",
+      "description": "Monospace Schriften für Code and vorformatiertem Text.",
       "value": [
         "Monaspace Argon",
-        "RobotoMono",
-        "ui-monospace",
-        "Cascadia Code",
         "Menlo",
         "Consolas",
         "DejaVu Sans Mono",

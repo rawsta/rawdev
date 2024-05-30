@@ -1,6 +1,6 @@
 {
   "title": "Farben",
-  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
+  "description": "Hex-Codes als CSS-Variablen für leichte Wiederverwendung.",
   "items": [
     {
       "name": "Base Dark",

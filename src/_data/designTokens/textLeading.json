@@ -1,6 +1,6 @@
 {
-  "title": "Leading",
-  "description": "Ratio-based leading/line-height values",
+  "title": "Zeilenhöhe",
+  "description": "Verhältnisbasierte Zeilenabstands-/Zeilenhöhenwerte.",
   "items": [
     {
       "name": "Flat",
