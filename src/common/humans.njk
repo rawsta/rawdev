@@ -4,11 +4,31 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 /* TEAM */
-Developer: {{ meta.creator.name }}
-Contact: {{ meta.creator.email }}
-Site: {{ meta.creator.website }}
-{% if meta.creator.social %}
-Find me on: {{ meta.creator.social }}{% endif %}
+
+    Developer: {{ meta.creator.name }}
+    Contact: {{ meta.creator.email }}
+    Site: {{ meta.creator.website }}
+    CodePen: https://codepen.io/{{ meta.creator.codepen }}
+    GitHub: https://github.com/{{ meta.creator.github }}
+    Find me on: {{ meta.creator.social }}
+
+/* THANKS */
+
+    Name: https://github.com/madrilene/
 
 /* SITE */
-Doctype: HTML5
+
+    Doctype: HTML5
+    Compiled with: {{ eleventy.generator }}
+
+/* LANGUAGES */
+
+    HTML
+    Markdown
+    Nunjucks
+    CSS & SCSS
+    JavaScript
+    JSON
+    XML
+    YAML
+    WebC
