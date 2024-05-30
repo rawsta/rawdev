@@ -19,8 +19,10 @@
         </a>
       </li>
     {% endfor %}
-  </ul>
-</nav>
+    </ul>
+  </nav>
+  <!-- theme switch -->
+  {% include 'components/theme-switch.njk' %}
 
 {% if drawerNav %}
   {% include "components/burger-template.njk" %}
