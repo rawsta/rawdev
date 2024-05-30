@@ -97,7 +97,7 @@
   font-weight: 400;
   src:
     local(''),
-    url('/assets/fonts/protest/InterDisplay-Regular.woff2') format('woff2');
+    url('/assets/fonts/inter/InterDisplay-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -107,7 +107,7 @@
   font-weight: 700;
   src:
     local(''),
-    url('/assets/fonts/protest/InterDisplay-Bold.woff2') format('woff2');
+    url('/assets/fonts/inter/InterDisplay-Bold.woff2') format('woff2');
 }
 
 @font-face {
