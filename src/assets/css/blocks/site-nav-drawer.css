@@ -75,7 +75,6 @@
   position: relative;
   z-index: 2;
   cursor: pointer;
-  align-items: center;
   padding: var(--space-xs) 0;
 }
 
@@ -97,7 +96,7 @@
   transform: var(--nav-list-rotate, rotate(45deg));
 }
 
-@media screen(sm) {
+@media screen and (min-width: 640px) {
   .site-nav-drawer {
     --nav-button-display: none;
     --nav-position: static;
