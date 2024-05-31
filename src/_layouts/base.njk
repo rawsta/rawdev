@@ -37,7 +37,7 @@
     {# TODO: replace with new fonts #}
     <link
       rel="preload"
-      href="/assets/fonts/figtree/figtree-variable[wght].woff2"
+      href="/assets/fonts/outfit/outfit-v11-latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -45,7 +45,7 @@
 
     <link
       rel="preload"
-      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      href="/assets/fonts/inter/InterDisplay-Bold.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -90,7 +90,7 @@
     {% include "partials/meta-info.njk" %}
   </head>
 
-  <body class="{{ layout }} schema-{{ schema }}">
+  <body class="{{ layout }} page-{{ pgae.layout}}">
     {% include "partials/header.njk" %}
 
     <main id="main" class="flow">{{ content | safe }}</main>

@@ -28,7 +28,7 @@ code .highlight-line:before {
   text-align: right;
   width: 2.4em;
 }
-/* trying linenumbers 
+/* trying linenumbers
 pre {
   counter-reset: lineNumber;
 }
@@ -101,14 +101,17 @@ pre[class*='language-'] {
   }
 }
 
+/* usually inline-code */
 :where(:not(pre)) > code {
   position: relative;
   top: -0.05em;
   background-color: var(--color-bg-accent);
 }
 
+/* usually inline-code */
 :where(:not(a, pre, blockquote)) > code {
   color: var(--color-text-accent);
+  padding: .2em .4em;
 }
 
 pre[class*='language-'] {
