@@ -1,20 +1,47 @@
-.theme-switch h2 {
+/* .theme-switch h2 {
   font-size: var(--size-step-min-1);
   font-family: var(--font-base);
-}
+} */
 
 .theme-switch .button {
-  --button-border: var(--color-bg-accent-2);
+  /* --button-border: var(--color-bg-accent-2); */
   border-radius: var(--border-radius);
-  font-size: var(--size-step-min-2);
+  border: none;
+  font-size: var(--size-step-0);
   padding: 0.1rem 0.625rem;
-  font-weight: var(--font-bold);
-  min-block-size: 1.5em;
+  font-weight: var(--font-medium);
+  min-block-size: 1em;
   text-transform: uppercase;
+  background: none;
+  transition: all var(--transition);
 }
 
+.theme-switch .button[aria-pressed='true'],
+.theme-switch .button span {
+  transition: all var(--transition);
+  transition-delay: 100ms;
+  transform: translateX(100%);
+  color: var(--color-bg);
+  opacity: 0;
+}
+
+.theme-switch .button:hover {
+  background-color: var(--color-tertiary);
+  --button-text: var(--color-text);
+  & span {
+    color: var(--color-text);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  & svg {
+    color: var(--color-primary);
+  }
+}
+
+
 .theme-switch .button[aria-pressed='true'] {
-  --_color-primary-contrast: color-mix(
+  display: none;
+  /* --_color-primary-contrast: color-mix(
     in oklab,
     var(--color-primary) 85%,
     var(--color-base-dark)
@@ -22,5 +49,5 @@
   --button-bg: var(--_color-primary-contrast);
   --button-text: var(--color-base-light);
   --button-border: var(--_color-primary-contrast);
-  outline-color: var(--_color-primary-contrast);
+  outline-color: var(--_color-primary-contrast); */
 }

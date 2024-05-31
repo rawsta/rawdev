@@ -7,10 +7,12 @@
   hidden
 >
   <span id="theme-switcher-label" class="visually-hidden">{{ meta.themeSwitch.title }}</span>
-  <button class="button" id="light-theme-toggle" data-theme="light">
+  <button class="button" id="light-theme-toggle" data-theme="light" title="{{ meta.themeSwitch.light }}">
     <span>{{ meta.themeSwitch.light }}</span>
+    {% include "svg/sun.svg" %}
   </button>
-  <button class="button" id="dark-theme-toggle" data-theme="dark">
+  <button class="button" id="dark-theme-toggle" data-theme="dark" title="{{ meta.themeSwitch.dark }}">
     <span>{{ meta.themeSwitch.dark }}</span>
+    {% include "svg/star.svg" %}
   </button>
 </div>

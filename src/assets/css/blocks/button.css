@@ -11,14 +11,30 @@
   text-align: center;
 }
 
+#main .button {
+  transition: all var(--transition);
+  box-shadow: inset 0 0 0 0 transparent;
+  &:hover {
+    --button-bg: transparent;
+    box-shadow: inset 0 -3.25em 0 0 var(--color-primary);
+  }
+}
+
 .button:hover,
 .button[aria-current='page'],
 .button[aria-pressed='true'],
 .button[data-state='active'] {
-  background-size: 150% 150%;
+  /* background-size: 150% 150%; */
   --button-bg: var(--color-text);
   --button-text: var(--color-bg);
-  --button-border: var(--color-text);
+  /* --button-border: var(--color-text); */
+  --button-border: var(--color-primary);
+  /* &::before {
+    transform: scaleY(1);
+    transition-property: transform;
+    transition-duration: var(--transition-duration-short);
+  } */
+
 }
 
 .button:active {
