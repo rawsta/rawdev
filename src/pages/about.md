@@ -3,6 +3,7 @@ title: About
 permalink: /about/index.html
 description: 'Die Hintergründe und Beweggründe, die diese Seite haben entstehen lassen.'
 layout: page
+wrapperClass: about-rawsta
 youtube: true
 ---
 
