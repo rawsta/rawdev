@@ -1,12 +1,11 @@
 /*
 CLUSTER
 More info: https://every-layout.dev/layouts/cluster/
-A layout that lets you distribute items with consitent
-spacing, regardless of their size
+A layout that lets you distribute items with consitent spacing,
+regardless of their size
 
 CUSTOM PROPERTIES AND CONFIGURATION
---gutter (var(--space-s-m)): This defines the space
-between each item.
+--gutter (var(--space-s-m)): This defines the space between each item.
 
 --cluster-horizontal-alignment (flex-start) How items should align
 horizontally. Can be any acceptable flexbox aligmnent value.
