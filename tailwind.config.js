@@ -71,7 +71,8 @@ module.exports = {
     preflight: false,
     textOpacity: false,
     backgroundOpacity: false,
-    borderOpacity: false
+    borderOpacity: false,
+    modifiers: true
   },
 
   // Prevents Tailwind's core components
