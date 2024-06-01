@@ -17,8 +17,8 @@ pre {
 code .highlight-line:before {
   -webkit-user-select: none;
   user-select: none;
-  border-right: 1px solid #404040;
-  color: #858585;
+  border-right: 2px solid var(--color-bg-accent-2);
+  color: var(--color-bg-accent-2);
   content: counter(lineNumber);
   counter-increment: lineNumber;
   display: inline-block;
@@ -50,7 +50,7 @@ code .highlight-line:before {
 code,
 pre {
   font-family: var(--font-mono);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   font-variant-ligatures: normal;
   font-variant-numeric: tabular-nums slashed-zero;
   line-height: 1.4;
@@ -112,7 +112,7 @@ pre[class*='language-'] {
 /* usually inline-code */
 :where(:not(a, pre, blockquote)) > code {
   color: var(--color-text-accent);
-  padding: .2em .4em;
+  padding: .05em .4em;
 }
 
 pre[class*='language-'] {

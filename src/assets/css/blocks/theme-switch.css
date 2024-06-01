@@ -7,6 +7,7 @@
   /* --button-border: var(--color-bg-accent-2); */
   border-radius: var(--border-radius);
   border: none;
+  box-shadow: none;
   font-size: var(--size-step-0);
   padding: 0.1rem 0.625rem;
   font-weight: var(--font-medium);

@@ -52,8 +52,8 @@ module.exports = {
   },
   details: {
     aria: 'section controls',
-    expand: 'expand all',
-    collapse: 'collapse all'
+    expand: 'alle aufklappen',
+    collapse: 'alle zuklappen'
   },
   navigation: {
     ariaTop: 'Main',
