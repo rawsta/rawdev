@@ -4,7 +4,7 @@
 }
 
 .styleguide code {
-  font-size: var(--size-step-min-2);
+  font-size: var(--size-step-min-1);
 }
 
 .styleguide section {
@@ -32,8 +32,7 @@
 
   display: grid;
   grid-gap: var(--gap);
-  /* min() with 100% prevents overflow
-		in extra narrow spaces */
+  /* min() with 100% prevents overflow in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 

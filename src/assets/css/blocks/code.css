@@ -50,7 +50,7 @@ code .highlight-line:before {
 code,
 pre {
   font-family: var(--font-mono);
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-1);
   font-variant-ligatures: normal;
   font-variant-numeric: tabular-nums slashed-zero;
   line-height: 1.4;

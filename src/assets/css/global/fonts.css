@@ -21,8 +21,8 @@
     src:
       url('/assets/fonts/bricolage/BricolageGrotesque96pt-Bold.woff2') format('woff2');
   }
-}
 
+}
 
 
 /* Inter Variable + Fallback */
@@ -47,7 +47,6 @@
     src:
       url('/assets/fonts/inter/InterDisplay-Regular.woff2') format('woff2');
   }
-
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -60,9 +59,7 @@
 }
 
 
-
 /* MonaSpace Variable + Fallback */
-
 @supports not (font-variation-settings: normal) {
 
   @font-face {
@@ -85,4 +82,5 @@
     src:
       url('/assets/fonts/jetbrains/JetBrainsMono-Regular.woff2') format('woff2');
   }
+
 }
