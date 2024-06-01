@@ -6,7 +6,7 @@
       "name": "Display",
       "description": "'Schriftstapel' für Überschriften und großem Text.",
       "value": [
-        "Inter",
+        "BricolageGrotesque",
         "Segoe UI",
         "Helvetica Neue",
         "Arial",
@@ -17,7 +17,7 @@
       "name": "Base",
       "description": "'Schriftstapel' für den Inhalt.",
       "value": [
-        "Outfit",
+        "Inter",
         "Optima",
         "Candara",
         "Noto Sans",
@@ -28,7 +28,7 @@
       "name": "Mono",
       "description": "Monospace Schriften für Code and vorformatiertem Text.",
       "value": [
-        "Monaspace Argon",
+        "JetBrains Mono",
         "Menlo",
         "Consolas",
         "DejaVu Sans Mono",

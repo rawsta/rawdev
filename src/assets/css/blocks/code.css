@@ -22,7 +22,6 @@ code .highlight-line:before {
   content: counter(lineNumber);
   counter-increment: lineNumber;
   display: inline-block;
-  font-variant-numeric: tabular-nums;
   margin-right: 1.2em;
   padding-right: 1.2em;
   text-align: right;
@@ -52,6 +51,8 @@ code,
 pre {
   font-family: var(--font-mono);
   font-size: var(--size-step-min-1);
+  font-variant-ligatures: normal;
+  font-variant-numeric: tabular-nums slashed-zero;
   line-height: 1.4;
   background-color: var(--color-bg-accent);
   padding: 0.1em 0.4em;
