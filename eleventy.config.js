@@ -33,8 +33,7 @@ const {
 const {
   imageShortcode,
   includeRaw,
-  liteYoutube,
-  asideShortcode
+  liteYoutube
 } = require( './config/shortcodes/index.js' );
 
 // module import collections
@@ -51,7 +50,6 @@ const {svgToJpeg} = require( './config/events/index.js' );
 // Plugins
 const {EleventyRenderPlugin} = require( '@11ty/eleventy' );
 const pluginRss = require( '@11ty/eleventy-plugin-rss' );
-const inclusiveLangPlugin = require( '@11ty/eleventy-plugin-inclusive-language' );
 const bundlerPlugin = require( '@11ty/eleventy-plugin-bundle' );
 const syntaxHighlight = require( '@11ty/eleventy-plugin-syntaxhighlight' );
 const pluginTOC  = require( 'eleventy-plugin-toc');
@@ -100,7 +98,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addNunjucksAsyncShortcode( 'eleventyImage', imageShortcode );
   eleventyConfig.addShortcode( 'youtube', liteYoutube );
   eleventyConfig.addShortcode( 'include_raw', includeRaw );
-  eleventyConfig.addShortcode( 'aside', asideShortcode );
   eleventyConfig.addShortcode( 'year', () => `${new Date().getFullYear()}` );
 
 
@@ -138,7 +135,6 @@ module.exports = eleventyConfig => {
     components: ['./src/_includes/components/*.webc'],
     useTransform: true
   });
-  eleventyConfig.addPlugin( inclusiveLangPlugin );
   eleventyConfig.addPlugin( bundlerPlugin );
   eleventyConfig.setLibrary( 'md', markdownLib );
 
