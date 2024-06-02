@@ -22,7 +22,7 @@ const markdownLib = markdownIt({
 })
 .disable( 'code' )
 .use( markdownItPrism, {
-    // highlightInlineCode: true,
+    highlightInlineCode: true,
     defaultLanguage: 'plaintext'
   })
   .use( markdownItAnchor, {
@@ -32,11 +32,6 @@ const markdownLib = markdownIt({
     permalink: markdownItAnchor.permalink.headerLink({
       class: 'heading-anchor'
     })
-  })
-  .use( markdownItContainer, 'special' )
-  .use( markdownItClass, {
-    ol: 'list',
-    ul: 'list'
   })
   .use( markdownItLinkAttributes, [
     {
@@ -49,6 +44,11 @@ const markdownLib = markdownIt({
       }
     }
   ])
+  .use( markdownItClass, {
+    ol: 'list',
+    ul: 'list'
+  })
+  .use( markdownItContainer, 'special' )
   .use( markdownItEmoji )
   .use( markdownItEleventyImg, {
     imgOptions: {
