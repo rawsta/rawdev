@@ -1,0 +1,38 @@
+
+custom-split {
+    --region-space-top: var(--space-3xl);
+    --gutter: var(--space-m);
+    font-family: var(--font-display);
+    font-size: var(--size-step-1);
+}
+
+custom-split img {
+    aspect-ratio: 16 / 9;
+    filter: grayscale(100%) brightness(110%);
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+custom-split picture {
+    position: relative;
+}
+
+custom-split img,
+custom-split picture::after {
+    border-end-start-radius: var(--border-radius);
+}
+
+custom-split picture::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: hard-light;
+    background-color: var(--color-primary);
+    opacity: 0.1;
+}
+
+[data-theme='light'] custom-split picture::after {
+    mix-blend-mode: soft-light;
+    opacity: 0.6;
+    background-image: linear-gradient(to top right, var(--color-bg), var(--color-primary));
+}
