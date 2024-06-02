@@ -32,7 +32,6 @@ const {
 // module import shortcodes
 const {
   imageShortcode,
-  svgShortcode,
   includeRaw,
   liteYoutube
 } = require( './config/shortcodes/index.js' );
@@ -96,10 +95,20 @@ module.exports = eleventyConfig => {
 
   // 	--- [ CUSTOM SHORTCODES ] ---
   eleventyConfig.addNunjucksAsyncShortcode( 'eleventyImage', imageShortcode );
-  eleventyConfig.addShortcode( 'svg', svgShortcode );
   eleventyConfig.addShortcode( 'youtube', liteYoutube );
   eleventyConfig.addShortcode( 'include_raw', includeRaw );
   eleventyConfig.addShortcode( 'year', () => `${new Date().getFullYear()}` );
+  eleventyConfig.addPairedNunjucksAsyncShortcode(
+    "renderWebC",
+    async function (content) {
+      return eleventyConfig.javascriptFunctions.renderTemplate.call(
+        this,
+        content,
+        "webc",
+        this.ctx
+      );
+    }
+  );
 
 
   // 	--- [ CUSTOM TRANSFORMS ] ---
