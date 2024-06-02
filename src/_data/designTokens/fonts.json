@@ -10,6 +10,7 @@
         "Segoe UI",
         "Helvetica Neue",
         "Arial",
+        "system-ui",
         "sans-serif"
       ]
     },
@@ -21,6 +22,7 @@
         "Optima",
         "Candara",
         "Noto Sans",
+        "system-ui",
         "sans-serif"
       ]
     },
@@ -32,6 +34,7 @@
         "Menlo",
         "Consolas",
         "DejaVu Sans Mono",
+        "ui-monospace",
         "monospace"
       ]
     }
