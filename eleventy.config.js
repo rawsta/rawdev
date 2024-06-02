@@ -33,7 +33,8 @@ const {
 const {
   imageShortcode,
   includeRaw,
-  liteYoutube
+  liteYoutube,
+  asideShortcode
 } = require( './config/shortcodes/index.js' );
 
 // module import collections
@@ -74,6 +75,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias( 'post', 'post.njk' );
   eleventyConfig.addLayoutAlias( 'tags', 'tags.njk' );
 
+
   // 	--- [  CUSTOM FILTERS ] ---
   eleventyConfig.addFilter( 'toIsoString', toISOString );
   eleventyConfig.addFilter( 'formatDate', formatDate );
@@ -93,22 +95,13 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter( 'values', Object.values );
   eleventyConfig.addFilter( 'entries', Object.entries );
 
+
   // 	--- [ CUSTOM SHORTCODES ] ---
   eleventyConfig.addNunjucksAsyncShortcode( 'eleventyImage', imageShortcode );
   eleventyConfig.addShortcode( 'youtube', liteYoutube );
   eleventyConfig.addShortcode( 'include_raw', includeRaw );
+  eleventyConfig.addShortcode( 'aside', asideShortcode );
   eleventyConfig.addShortcode( 'year', () => `${new Date().getFullYear()}` );
-  eleventyConfig.addPairedNunjucksAsyncShortcode(
-    "renderWebC",
-    async function (content) {
-      return eleventyConfig.javascriptFunctions.renderTemplate.call(
-        this,
-        content,
-        "webc",
-        this.ctx
-      );
-    }
-  );
 
 
   // 	--- [ CUSTOM TRANSFORMS ] ---
@@ -168,7 +161,7 @@ module.exports = eleventyConfig => {
   // 	--- [ GENERAL CONFIG ] ---
   return {
 
-    templateFormats: ["html", "md", "njk"],
+    templateFormats: ["html", "md", "njk", "webc"],
     // Pre-process *.md, *.html and global data files with Nunjucks
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
