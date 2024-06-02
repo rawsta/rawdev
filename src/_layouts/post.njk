@@ -26,6 +26,13 @@ schema: blog
       {% endif %}
     </p>
 
+    <details class="toc-details">
+      <summary>Table of content</summary>
+      <div class="toc-wrapper">
+        {{ content | toc | safe }}
+      </div>
+    </details>
+
     {{ content | safe }}
     {% include 'components/edit-on.njk' %}
   </div>
@@ -36,7 +43,4 @@ schema: blog
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
     <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
   </div>
-</article>
-<aside>
-  {{ content | toc | safe }}
 </article>
