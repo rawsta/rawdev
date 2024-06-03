@@ -2,18 +2,17 @@
 
 <!doctype html>
 <html lang="{{ meta.lang }}">
-  <!-- The order of elements in the head follows recommendations by Harry Roberts.
-    @link: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
 
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>
       {% if discover.title %}
-        {{ discover.title }}
+        {{ discover.title | escape }}
       {% elif title %}
-        {{ title }}
+        {{ title | escape }}
       {% else %}
         {{ meta.siteName }}
       {% endif %}
@@ -61,15 +60,13 @@
             {% if preloads.crossorigin %}crossorigin{% endif %} />
     {% endif %}
 
-    <!-- defered js  -->
 
     {% if masonry %}
-      <!-- masonry fallback, if true in frontmatter -->
       <script src="/assets/scripts/masonry.js?{{ assetHash }}" defer></script>
     {% endif %}
 
     {% if youtube %}
-      <!-- youtube, if true in frontmatter TODO: replace with local version -->
+      <!-- TODO: replace with local version -->
       <script
         type="module"
         src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
@@ -77,20 +74,17 @@
     {% endif %}
 
     {% if meta.navigation.drawerNav %}
-      <!-- menu drawer js, if true in meta -->
       <script src="/assets/scripts/nav-drawer.js?{{ assetHash }}" defer></script>
     {% endif %}
 
     {% if meta.easteregg %}
-      <!-- easteregg js, if true in meta -->
       <script src="/assets/scripts/easteregg.js?{{ assetHash }}" defer></script>
     {% endif %}
 
-    <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}
   </head>
 
-  <body class="{{ layout }} page-{{ pgae.layout}}">
+  <body class="{{ layout }} page-{{ page.layout}}">
     {% include "partials/header.njk" %}
 
     <main id="main" class="flow">{{ content | safe }}</main>
