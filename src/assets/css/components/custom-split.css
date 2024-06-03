@@ -1,6 +1,6 @@
 
 custom-split {
-    --region-space-top: var(--space-3xl);
+    --region-space-top: var(--space-xs);
     --gutter: var(--space-m);
     font-family: var(--font-display);
     font-size: var(--size-step-1);
