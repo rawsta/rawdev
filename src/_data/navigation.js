@@ -17,6 +17,10 @@ module.exports = {
       url: '/blog/'
     },
     {
+      text: 'Snippets',
+      url: '/snippets/'
+    },
+    {
       text: 'Style guide',
       url: '/styleguide/'
     }

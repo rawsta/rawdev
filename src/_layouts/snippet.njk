@@ -1,0 +1,25 @@
+---
+layout: base
+schema: blog
+---
+
+<article class="region snippet" style="--region-space-top: var(--space-xl-2xl)">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text-linear">{{ title }}</h1>
+
+    <p class="meta | cluster" style="--gutter: var(--space-xs-s)">
+      {% if tags.length > 1%}
+        {% for tag in tags %}
+          {% if tag != "posts" %}
+            <a class="button post-tag" href="/tags/{{ tag }}"> {{ tag }} </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <span class="post-tag">{{ syntax }}</span>
+    </p>
+
+    {{ content | safe }}
+    {% include 'components/edit-on.njk' %}
+  </div>
+
+</article>

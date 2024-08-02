@@ -1,0 +1,5 @@
+{
+  "layout": "snippet",
+  "tags": "snippets",
+  "permalink": "/snippets/{{ title | slugify }}/index.html"
+}

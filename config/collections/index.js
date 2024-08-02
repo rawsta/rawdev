@@ -4,6 +4,12 @@ const getAllPosts = collection => {
   return posts.reverse();
 };
 
+/** All blog posts as a collection. */
+const getAllSnippets = collection => {
+  const snippets = collection.getFilteredByGlob( './src/snippets/**/*.md' );
+  return snippets.reverse();
+};
+
 /** All markdown files as a collection for sitemap.xml */
 const onlyMarkdown = collection => {
   return collection.getFilteredByGlob( './src/**/*.md' );
@@ -23,6 +29,7 @@ const tagList = collection => {
 
 module.exports = {
   getAllPosts,
+  getAllSnippets,
   onlyMarkdown,
   tagList
 };
