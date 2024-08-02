@@ -17,7 +17,7 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
-    "start:debug": "DEBUG=Eleventy* npm start",
+    "start:debug": "DEBUG=Eleventy* npm @11ty/eleventy",
     "build": "run-s clean build:*"
   },
   "keywords": [

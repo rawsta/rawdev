@@ -7,6 +7,15 @@ description: 'Mein eigenes kleines Impressum'
 layout: page
 ---
 
-Edit your details in `_data/personal.yaml`
+## Angaben gemäß § 5 TMG:
+
+{{ personal.address }}
+
+### Kontakt
+
+E-Mail: `rawsta [at] rawsta [dot] de`
+
+
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
 {{ personal.address }}

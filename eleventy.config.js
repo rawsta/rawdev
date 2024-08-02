@@ -39,6 +39,7 @@ const {
 // module import collections
 const {
   getAllPosts,
+  getAllSnippets,
   onlyMarkdown,
   tagList
 } = require( './config/collections/index.js' );
@@ -71,6 +72,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias( 'page', 'page.njk' );
   eleventyConfig.addLayoutAlias( 'blog', 'blog.njk' );
   eleventyConfig.addLayoutAlias( 'post', 'post.njk' );
+  eleventyConfig.addLayoutAlias( 'snippet', 'snippet.njk' );
+  eleventyConfig.addLayoutAlias( 'snippets', 'snippets.njk' );
   eleventyConfig.addLayoutAlias( 'tags', 'tags.njk' );
 
 
@@ -112,6 +115,7 @@ module.exports = eleventyConfig => {
 
   // 	--- [ CUSTOM COLLECTIONS ] ---
   eleventyConfig.addCollection( 'posts', getAllPosts );
+  eleventyConfig.addCollection( 'snippets', getAllSnippets );
   eleventyConfig.addCollection( 'onlyMarkdown', onlyMarkdown );
   eleventyConfig.addCollection( 'tagList', tagList );
 
