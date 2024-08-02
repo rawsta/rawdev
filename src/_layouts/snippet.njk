@@ -8,6 +8,12 @@ schema: blog
     <h1 class="gradient-text-linear">{{ title }}</h1>
 
     <p class="meta | cluster" style="--gutter: var(--space-xs-s)">
+      <span class="button post-tag lang-{{ syntax }}">{{ syntax }}</span>
+    </p>
+
+    {{ content | safe }}
+    {% include 'components/edit-on.njk' %}
+    <p class="sub-meta | cluster" style="--gutter: var(--space-xs-s)">
       {% if tags.length > 1%}
         {% for tag in tags %}
           {% if tag != "posts" %}
@@ -15,11 +21,7 @@ schema: blog
           {% endif %}
         {% endfor %}
       {% endif %}
-      <span class="post-tag">{{ syntax }}</span>
     </p>
-
-    {{ content | safe }}
-    {% include 'components/edit-on.njk' %}
   </div>
 
 </article>

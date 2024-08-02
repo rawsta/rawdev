@@ -5,6 +5,7 @@ date: 2023-04-20
 syntax: 'javascript'
 tags: ['string', 'slug', 'url']
 ---
+
 ```js
 function slugify(string) {
     const a = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìıİłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;'
