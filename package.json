@@ -9,10 +9,10 @@
     "node": ">=20.x.x"
   },
   "scripts": {
-    "clean": "rimraf dist src/_includes/css src/_includes/scripts",
+    "clean": "rimraf dist ./src/_includes/css ./src/_includes/scripts",
     "favicons": "node ./src/_config/setup/generate-favicons.js",
     "screenshots": "node ./src/_config/setup/generate-screenshots.js",
-    "dev:clean": "rimraf src/assets/og-images",
+    "dev:clean": "rimraf ./src/assets/og-images",
     "dev:11ty": "cross-env ELEVENTY_ENV=development eleventy --serve --watch",
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "start": "run-p dev:*",
@@ -21,7 +21,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/rawsta/rawdev.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0-beta.1",

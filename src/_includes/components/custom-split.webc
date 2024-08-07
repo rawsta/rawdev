@@ -1,4 +1,0 @@
-<custom-split class="feature | grid region" data-layout="50-50" webc:root>
-  <slot name="eleventyImage"></slot>
-  <p><slot></slot></p>
-</custom-card>
