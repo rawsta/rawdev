@@ -6,7 +6,7 @@ cover: /assets/manifest-title.jpg
 category: javascript
 #slug: manifest-zur-pwa
 #template: post
-tags: [ 'pwa', serviceworker', wip' ]
+tags: [ 'pwa', 'serviceworker', 'wip' ]
 ---
 
 

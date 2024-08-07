@@ -2,7 +2,7 @@
 title: 'Slugify String'
 description: 'String websicher umwandeln.'
 date: 2023-04-20
-syntax: 'javascript'
+syntax: 'js'
 tags: ['string', 'slug', 'url']
 ---
 

@@ -5,7 +5,7 @@ const rawstaCode = ['r', 'a', 'w', 's', 't', 'a'];
 let indexEleventy = 0;
 let indexExcellent = 0;
 
-// Trigger confetti if someone enters "eleventy" or "excellent"
+// Trigger confetti if someone enters "eleventy" or "rawsta"
 document.addEventListener('keydown', event => {
   if (eleventyCode[indexEleventy] === event.key.toLowerCase()) {
     ++indexEleventy;
@@ -28,7 +28,7 @@ document.addEventListener('keydown', event => {
       const confetti = module.default;
       const scalar = 4;
       const particleCount = 30;
-      const star = confetti.shapeFromText({text: '⭐️', scalar});
+      const star = confetti.shapeFromText({text: '🛸', scalar});
 
       confetti({
         shapes: [star],

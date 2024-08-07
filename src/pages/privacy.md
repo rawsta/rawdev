@@ -11,6 +11,8 @@ layout: page
 
 Sofern innerhalb des Internetangebotes die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten (E-Mail-Adressen, Namen, Anschriften u.a.) besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers grundsätzlich auf freiwilliger Basis. Ohne die ausdrückliche Zustimmung des Nutzers werden keine Daten an Dritte weitergeben.
 
+Kurz gesagt: Diese Seite sammelt keine Daten.
+
 **Name und Kontaktdaten des Verantwortlichen**
 
 {{ personal.address }}
