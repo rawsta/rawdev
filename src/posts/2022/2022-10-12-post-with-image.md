@@ -19,7 +19,7 @@ In the most basic version it contains the path to the image, alt text (can be an
 {% raw %}
 
 ```jinja2
-{% eleventyImage "path to image", "alt text", "caption text" %}
+{% image "path to image", "alt text", "caption text" %}
 ```
 
 {% endraw %}
@@ -33,8 +33,8 @@ The class names are passed in the outer container, the `<picture>` or `<figure>`
 {% raw %}
 
 ```jinja2
-{% eleventyImage "path to image", "alt text", "caption text", "eager", "class names", "(min-width:30em) 50vw, 100vw", [200, 400] %}
-{% eleventyImage "path to image", "alt text", null, "eager" %}
+{% image "path to image", "alt text", "caption text", "eager", "class names", "(min-width:30em) 50vw, 100vw", [200, 400] %}
+{% image "path to image", "alt text", null, "eager" %}
 ```
 
 {% endraw %}
@@ -44,26 +44,26 @@ The class names are passed in the outer container, the `<picture>` or `<figure>`
 {% raw %}
 
 ```jinja2
-{% eleventyImage "./src/assets/images/gallery/asturias-2.jpg", "Close-up of a delicate white flower with a yellow center, surrounded by green leaves", "Jasmine nightshades blooming in July" %}
+{% image "./src/assets/images/gallery/asturias-2.jpg", "Close-up of a delicate white flower with a yellow center, surrounded by green leaves", "Jasmine nightshades blooming in July" %}
 ```
 
 {% endraw %}
 
-{% eleventyImage "./src/assets/images/gallery/asturias-2.jpg", "Close-up of a delicate white flower with a yellow center, surrounded by green leaves", "Jasmine nightshades blooming in July" %}
+{% image "./src/assets/images/gallery/asturias-2.jpg", "Close-up of a delicate white flower with a yellow center, surrounded by green leaves", "Jasmine nightshades blooming in July" %}
 
 ### Example image with all the arguments
 
 {% raw %}
 
 ```jinja2
-{% eleventyImage "./src/assets/images/gallery/asturias-3.jpg", "A traditional Asturian village with it's raised granaries, surrounded by lush green hills and mountains", null, "lazy", "class-that-does-nothing", "(min-width:30em) 50vw, 100vw", [200, 400] %}
+{% image "./src/assets/images/gallery/asturias-3.jpg", "A traditional Asturian village with it's raised granaries, surrounded by lush green hills and mountains", null, "lazy", "class-that-does-nothing", "(min-width:30em) 50vw, 100vw", [200, 400] %}
 ```
 
 {% endraw %}
 
-{% eleventyImage "./src/assets/images/gallery/asturias-3.jpg", "A traditional Asturian village with it's raised granaries, surrounded by lush green hills and mountains", null, "lazy", "class-that-does-nothing", "(min-width:30em) 50vw, 100vw", [200, 400] %}
+{% image "./src/assets/images/gallery/asturias-3.jpg", "A traditional Asturian village with it's raised granaries, surrounded by lush green hills and mountains", null, "lazy", "class-that-does-nothing", "(min-width:30em) 50vw, 100vw", [200, 400] %}
 
-## Markdown sytnax
+## Markdown syntax
 
 Thanks to the [markdown-it-eleventy-img](https://github.com/solution-loisir/markdown-it-eleventy-img) package markdown also has it own image syntax. `src` is already prepended here, see `config/plugins/markdown.js`.
 

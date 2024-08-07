@@ -3,7 +3,7 @@ title: Blog
 description: 'Artikel zu Sachen, die mich interessieren.'
 layout: blog
 pagination:
-  data: collections.posts
+  data: collections.AllPosts
   size: 6
 permalink: 'blog/{% if pagination.pageNumber >=1  %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 ---

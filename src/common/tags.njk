@@ -7,22 +7,14 @@ eleventyComputed:
 
 <div class="taglist | mt-s-m cluster">
   {% for tag in collections.tagList %}
-  <a href="/tags/{{ tag }}" class="button">
-    {{ tag }}
-  </a>
+    <a href="/tags/{{ tag }}" class="button"> {{ tag }} </a>
   {% endfor %}
 </div>
 
+<custom-masonry layout="50-50">
+  {% set itemlist = collections.posts %}
+  {% for item in itemlist %}
 
-<ul class="grid region" role="list" data-rows="masonry" data-layout="50-50">
-  <!-- loop posts -->
-  {% set itemlist = collections.posts %} {% for item in itemlist %}
-  <!-- activate tags -->
-  {% set activateTags = true %}
-  <!-- set heading context -->
-  {% set headingContext = "h2" %}
-  <!-- card -->
-  {% include 'components/card.njk' %} {% endfor %}
-</ul>
-
-
+		{% include "partials/card-tag.njk" %}
+  {% endfor %}
+</custom-masonry>

@@ -1,6 +1,6 @@
 {
-  "title": "Zeilenhöhe",
-  "description": "Verhältnisbasierte Zeilenabstands-/Zeilenhöhenwerte.",
+  "title": "Leading",
+  "description": "Ratio-based leading/line-height values",
   "items": [
     {
       "name": "Flat",
@@ -8,11 +8,11 @@
     },
     {
       "name": "Fine",
-      "value": 1.25
+      "value": 1.2
     },
     {
       "name": "Standard",
-      "value": 1.625
+      "value": 1.4
     }
   ]
 }

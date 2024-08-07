@@ -1,37 +1,27 @@
 ---
 layout: base
-masonry: true
 ---
 
 <article class="wrapper">
   <header class="full | section" style="--spot-color: var(--color-secondary)">
-    <div
-      class="section__inner flow region"
-      style="--region-space-top: var(--space-xl-2xl)"
-    >
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
       <h1 class="text-center text-base-light">{{ title }}</h1>
     </div>
-    {% include 'svg/divider-raw.svg' %}
+
+    {% svg "divider/edgy", null, "seperator" %}
   </header>
 
-  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
-    {{ content | safe }}
-  </div>
+  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">{{ content | safe }}</div>
 
-  <ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
-    <!-- loop posts -->
-    {% set itemList = pagination.items %}
-    {% for item in itemList %}
-      <!-- activate tags -->
-      {% set activateTags = true %}
-      <!-- set date context -->
-      {% set definedDate = item.date %}
-      <!-- set heading context -->
-      {% set headingContext = "h2" %}
-      <!-- include card -->
-      {% include 'components/card.njk' %}
-    {% endfor %}
-  </ul>
+  <custom-masonry layout="50-50">
+
+	{% asyncEach item in pagination.items %}
+		{% set definedDate = item.date %}
+
+		{% include "partials/card-blog.njk" %}
+	{% endeach %}
+
+	</custom-masonry>
 
   <!-- set collection to paginate -->
   {% set collectionToPaginate = collections.posts %}
@@ -40,6 +30,6 @@ masonry: true
   <!-- if the number of items in the collection is greater than the number of items shown on one page -->
   {% if collectionToPaginate.length > pagination.size %}
     <!-- include pagination -->
-    {% include 'components/pagination.njk' %}
+    {% include 'partials/pagination.njk' %}
   {% endif %}
 </article>

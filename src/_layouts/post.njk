@@ -5,42 +5,39 @@ schema: blog
 
 <article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text-linear">{{ title }}</h1>
+    <h1 class="gradient-text">{{ title }}</h1>
 
     {% if image %}
-      {% eleventyImage image, alt or title, null, "eager", "feature" %}
-    {% endif %}
-    {% if credit %}
-      <p class="credit feature | text-step-min-1">© {{ credit }}</p>
+      <!-- image -->
+      {% image image, alt or title, credit, "eager", "feature" %}
     {% endif %}
 
     <p class="meta | cluster" style="--gutter: var(--space-xs-s)">
       <!-- date -->
-      {% set definedDate = date %} {% include "components/date.njk" %}
-      {% if tags.length > 1%}
-        {% for tag in tags %}
-          {% if tag != "posts" %}
-            <a class="button post-tag" href="/tags/{{ tag }}"> {{ tag }} </a>
-          {% endif %}
-        {% endfor %}
+      {% set definedDate = date %} {% include "partials/date.njk" %}
+      {%
+        if tags.length >
+        1
+      %}
+        <!-- tags -->
+        {% for tag in tags %}{% if tag != "posts" %}
+          <a class="button post-tag" href="/tags/{{ tag }}"> {{ tag }} </a>
+        {% endif %}{% endfor %}
       {% endif %}
     </p>
 
-    <details class="toc-details">
-      <summary>Table of content</summary>
-      <div class="toc-wrapper">
-        {{ content | toc | safe }}
-      </div>
-    </details>
-
     {{ content | safe }}
-    {% include 'components/edit-on.njk' %}
+    {% include 'partials/edit-on.njk' %}
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
   <div hidden class="h-entry">
-    <img class="u-author h-card" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}" alt="{{ meta.author.name }}" />
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
     <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+    <img
+      class="u-author h-card"
+      src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+      alt="{{ meta.author.name }}"
+    />
   </div>
 </article>

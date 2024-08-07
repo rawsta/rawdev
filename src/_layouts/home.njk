@@ -1,6 +1,5 @@
 ---
 layout: base
-masonry: true
 ---
 
 <div class="wrapper">
@@ -8,7 +7,8 @@ masonry: true
     <div class="section__inner flow region">
       <h1 class="text-center text-base-light">{{ title }}</h1>
     </div>
-    {% include 'svg/divider-waves.svg' %}
+
+    {% svg "divider/waves", null, "seperator" %}
   </header>
 
   <article class="full | region">
@@ -18,27 +18,24 @@ masonry: true
   <section class="full | region">
     <div class="wrapper flow prose">
       <h2>{{ blog.title }}</h2>
+      <!-- blog intro text is optional. -->
+
       {% if blog.intro %}
         <p>{{ blog.intro }}</p>
       {% endif %}
 
-      <ul
-        class="feature | grid region"
-        role="list"
-        data-rows="masonry"
-        data-layout="50-50"
-      >
-        <!-- loop posts -->
-        {% set itemList = collections.posts %}
-        {% for item in itemList.slice(0, 4) %}
-          <!-- activate tags -->
-          {% set activateTags = true %}
-          <!-- set heading context -->
-          {% set headingContext = "h3" %}
-          <!-- card -->
-          {% include 'components/card.njk' %}
-        {% endfor %}
-      </ul>
+      <div class="feature |  region">
+        <custom-masonry layout="50-50">
+          <!-- loop posts -->
+          {% set itemList = collections.allPosts %}
+          {% asyncEach item in itemList.slice(0, 4) %}
+            {% set definedDate = item.date %}
+
+            {% include "partials/card-blog.njk" %}
+
+          {% endeach %}
+        </custom-masonry>
+      </div>
     </div>
   </section>
 </div>
