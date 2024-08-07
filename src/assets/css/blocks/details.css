@@ -24,8 +24,8 @@ summary {
   gap: 0 1ch;
   cursor: pointer;
   list-style: none;
-  font-weight: var(--font-bold);
-  font-size: var(--size-step-1);
+  font-weight: var(--font-regular);
+  font-size: var(--size-step-0);
 }
 
 summary:hover,

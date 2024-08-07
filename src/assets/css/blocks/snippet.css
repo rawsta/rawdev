@@ -1,0 +1,10 @@
+/* Syntax / Languages */
+.post-tag {
+  &.lang-php {
+    --lang-color: rgb(73, 119, 247);
+  }
+  &.lang-js {
+    --lang-color: #ffd000;
+    --button-text: var(--color-bg);
+  }
+}
