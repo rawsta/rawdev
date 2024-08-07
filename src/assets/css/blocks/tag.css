@@ -10,12 +10,12 @@
   --button-border: var(--lang-color, var(--color-bg-accent-2));
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
-  padding: 0.1rem 0.625rem;
+  padding: 0.1rem 0.5rem;
   font-weight: var(--font-bold);
 }
 
 .card .post-tag {
-  margin-inline-end: var(--space-s-m);
+  margin-inline-end: var(--space-xs-s);
 }
 
 /* layout */

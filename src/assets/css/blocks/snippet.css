@@ -8,3 +8,7 @@
     --button-text: var(--color-bg);
   }
 }
+
+.description {
+  color: var(--color-text);
+}
