@@ -1,32 +1,33 @@
 export const url = process.env.URL || 'http://localhost:8080';
-export const siteName = 'Eleventy Excellent';
-export const siteDescription = 'Eleventy starter for building modern, resilient websites';
+export const siteName = 'Rawsta.de';
+export const siteDescription = 'Playground built with Eleventy and a lot of messing around';
 export const siteType = 'Person'; // schema
-export const locale = 'en_EN';
-export const lang = 'en';
-export const skipContent = 'Skip to content';
+export const locale = 'de_DE';
+export const lang = 'de';
+export const skipContent = 'Zum Inhalt springen';
 export const author = {
-  name: 'Lene Saile', // i.e. Lene Saile - page / blog author's name. Must be set.
+  name: 'Sebastian Fiele', // blog author's name. Must be set.
   avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
-  email: 'hola@lenesaile.com', // i.e. hola@lenesaile.com - email of the author
-  website: 'https://www.lenesaile.com' // i.e. https.://www.lenesaile.com - the personal site of the author
+  email: 'rawsta@rawsta.de', // email of the author
+  website: 'https://www.rawsta.de', // the personal site of the author
+  social: 'https://social.pizza.linux/@rawsta'
 };
 export const creator = {
-  name: 'Lene Saile', // i.e. Lene Saile - creator's (developer) name.
+  name: 'Lene Saile', // creator's (developer) name.
   email: 'hola@lenesaile.com',
   website: 'https://www.lenesaile.com',
   social: 'https://front-end.social/@lene'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
-export const themeColor = '#DD4462'; //  Manifest: defines the default theme color for the application
+export const themeColor = '#FF8300'; //  Manifest: defines the default theme color for the application
 export const themeBgColor = '#FBFBFB'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
-  "Visible content: An Eleventy starter with CUBE CSS, Cube CSS, Every Layout, Design Tokens and Tailwind for uitility classes. A workflow for building modern and resilient websites, introduced by Andy Bell's project buildexcellentwebsit.es"; // alt text for default meta image"
+  "An Eleventy website with CUBE CSS, Cube CSS, Every Layout, Design Tokens and Tailwind for utility classes. Mostly a playground for rawsta."; // alt text for default meta image"
 export const blog = {
   // RSS feed
-  name: 'My Web Development Blog',
-  description: 'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+  name: 'My WebDev Blog',
+  description: 'Some of my ramblings about stuff and sometimes an article or two. Mostly in german.',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {
@@ -43,18 +44,18 @@ export const blog = {
   // Tags
   tagSingle: 'Tag',
   tagPlural: 'Tags',
-  tagMore: 'More tags:',
+  tagMore: 'Mehr Tags:',
   // pagination
   paginationLabel: 'Blog',
-  paginationPage: 'Page',
-  paginationPrevious: 'Previous',
-  paginationNext: 'Next',
+  paginationPage: 'Seite',
+  paginationPrevious: 'Vorherige',
+  paginationNext: 'Nächste',
   paginationNumbers: true
 };
 export const details = {
   aria: 'section controls',
-  expand: 'expand all',
-  collapse: 'collapse all'
+  expand: 'Alle aufklappen',
+  collapse: 'Alle zuklappen'
 };
 export const navigation = {
   navLabel: 'Menu',
@@ -85,6 +86,6 @@ export const greenweb = {
 export const viewRepo = {
   // this is for the view/edit on github link. The value in the package.json will be pulled in.
   allow: true,
-  infoText: 'View this page on GitHub'
+  infoText: 'Code auf GitHub ansehen.'
 };
 export const easteregg = true;
