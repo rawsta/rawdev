@@ -18,7 +18,7 @@ masonry: true
     {{ content | safe }}
   </div>
 
-  <ul class="snippetcards | grid" role="list" data-rows="list">
+  <ul class="snippetcards | list" role="list" data-rows="list">
     <!-- loop snippets -->
     {% set itemList = pagination.items %}
     {% for item in itemList %}
