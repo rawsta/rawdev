@@ -5,38 +5,17 @@
     {
       "name": "Display",
       "description": "'Schriftstapel' für Überschriften und großem Text.",
-      "value": [
-        "BricolageGrotesque",
-        "Segoe UI",
-        "Helvetica Neue",
-        "Arial",
-        "system-ui",
-        "sans-serif"
-      ]
+      "value": ["Bricolage Grotesque", "Segoe UI", "Helvetica Neue", "Arial", "system-ui", "sans-serif"]
     },
     {
       "name": "Base",
       "description": "'Schriftstapel' für den Inhalt.",
-      "value": [
-        "Inter",
-        "Optima",
-        "Candara",
-        "Noto Sans",
-        "system-ui",
-        "sans-serif"
-      ]
+      "value": ["Inter", "Optima", "Candara", "Noto Sans", "system-ui", "sans-serif"]
     },
     {
       "name": "Mono",
       "description": "Monospace Schriften für Code and vorformatiertem Text.",
-      "value": [
-        "JetBrains Mono",
-        "Menlo",
-        "Consolas",
-        "DejaVu Sans Mono",
-        "ui-monospace",
-        "monospace"
-      ]
+      "value": ["JetBrains Mono", "Menlo", "Consolas", "DejaVu Sans Mono", "ui-monospace", "monospace"]
     }
   ]
 }

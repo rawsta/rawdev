@@ -1,86 +1,65 @@
 /* BricolageGrotesque Variable + Fallback */
 @supports (font-variation-settings: normal) {
-
   @font-face {
-    font-family: 'BricolageGrotesque';
+    font-family: 'Bricolage Grotesque';
     font-weight: 300 900;
     font-style: normal;
     font-display: swap;
-    src:
-      url('/assets/fonts/bricolage/BricolageGrotesque[opsz,wdth,wght].woff2') format('woff2-variations');
+    src: url('/assets/fonts/bricolage/BricolageGrotesque[opsz,wdth,wght].woff2') format('woff2-variations');
   }
-
 }
 @supports not (font-variation-settings: normal) {
-
   @font-face {
-    font-family: 'BricolageGrotesque';
+    font-family: 'Bricolage Grotesque';
     font-style: normal;
     font-display: swap;
     font-weight: 800;
-    src:
-      url('/assets/fonts/bricolage/BricolageGrotesque96pt-Bold.woff2') format('woff2');
+    src: url('/assets/fonts/bricolage/BricolageGrotesque96pt-Bold.woff2') format('woff2');
   }
-
 }
-
 
 /* Inter Variable + Fallback */
 @supports (font-variation-settings: normal) {
-
   @font-face {
     font-family: 'Inter';
     font-weight: 100 900;
     font-display: swap;
-    src:
-      url('/assets/fonts/inter/InterVariable.woff2') format('woff2');
+    src: url('/assets/fonts/inter/InterVariable.woff2') format('woff2');
   }
-
 }
 @supports not (font-variation-settings: normal) {
-
   @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src:
-      url('/assets/fonts/inter/InterDisplay-Regular.woff2') format('woff2');
+    src: url('/assets/fonts/inter/InterDisplay-Regular.woff2') format('woff2');
   }
   @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-display: swap;
     font-weight: 700;
-    src:
-      url('/assets/fonts/inter/InterDisplay-Bold.woff2') format('woff2');
+    src: url('/assets/fonts/inter/InterDisplay-Bold.woff2') format('woff2');
   }
-
 }
-
 
 /* MonaSpace Variable + Fallback */
 @supports not (font-variation-settings: normal) {
-
   @font-face {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-display: swap;
     font-weight: 100 800;
-    src:
-      url('/assets/fonts/jetbrains/JetBrainsMono[wght].woff2') format('woff2');
+    src: url('/assets/fonts/jetbrains/JetBrainsMono[wght].woff2') format('woff2');
   }
-
 }
 @supports not (font-variation-settings: normal) {
-
   @font-face {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src:
-      url('/assets/fonts/jetbrains/JetBrainsMono-Regular.woff2') format('woff2');
+    src: url('/assets/fonts/jetbrains/JetBrainsMono-Regular.woff2') format('woff2');
   }
-
 }
