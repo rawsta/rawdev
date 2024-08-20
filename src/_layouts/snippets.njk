@@ -11,7 +11,7 @@ masonry: true
     >
       <h1 class="text-center text-base-light">{{ title }}</h1>
     </div>
-    {% include 'svg/divider-raw.svg' %}
+    {% svg "divider/waves", null, "seperator" %}
   </header>
 
   <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
@@ -29,7 +29,7 @@ masonry: true
       <!-- set heading context -->
       {% set headingContext = "h2" %}
       <!-- include card -->
-      {% include 'components/snipp-card.njk' %}
+      {% include 'partials/card-blog.njk' %}
     {% endfor %}
   </ul>
 
@@ -40,6 +40,6 @@ masonry: true
   <!-- if the number of items in the collection is greater than the number of items shown on one page -->
   {% if collectionToPaginate.length > pagination.size %}
     <!-- include pagination -->
-    {% include 'components/pagination.njk' %}
+    {% include 'partials/pagination.njk' %}
   {% endif %}
 </article>

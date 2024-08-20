@@ -19,7 +19,7 @@ Diese Seite verwendet modernes CSS, Fluid type & Space, flexible Layouts und Pro
 Die Basis des Layouts/Front-ends bildet das CSS Boilerplate von [Andy Bell](https://piccalil.li/author/andy-bell). Was genau dahinter steckt, lässt sich im [Artikel auf piccalil.li](https://piccalil.li/blog/a-css-project-boilerplate/) nachlesen.
 
 <!-- Seinen sehr aufschlussreichen Talk...
-{% youtube 'JqnMI1AXl6w', 'Andy Bell - Be the browsers mentor, not its micromanager' %}
+{ % youtube 'JqnMI1AXl6w', 'Andy Bell - Be the browsers mentor, not its micromanager' % }
 
 ... und die [begleitende Webseite](https://buildexcellentwebsit.es) haben dabei nicht nur mich angesprochen.
 
@@ -28,4 +28,3 @@ Die Basis des Layouts/Front-ends bildet das CSS Boilerplate von [Andy Bell](http
 Da mir die Basis gefiel und ich eh gerade Urlaub hatte, habe ich mich entschlossen, mir mal wieder eine neue Seite zu machen.
 
 Zum Glück habe ich frühzeitig angefangen, meine _"Artikel"_ in Markdown zu verfassen. Dadurch konnte ich die meisten Inhalte leicht durch meine ganzen Experimente ziehen. -->
-

@@ -14,7 +14,7 @@ schema: blog
     </p>
 
     {{ content | safe }}
-    {% include 'components/edit-on.njk' %}
+    {% include 'partials/edit-on.njk' %}
     <p class="sub-meta | cluster" style="--gutter: var(--space-xs-s)">
       {% if tags.length > 1%}
         {% for tag in tags %}
