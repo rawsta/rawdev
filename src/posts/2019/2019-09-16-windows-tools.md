@@ -47,7 +47,7 @@ more coming _sooner or later_
 - [Cmder](https://cmder.net/) -> Great portable console emulator for Windows
 - [Clink](https://mridgers.github.io/clink/) -> Powerful Bash-style command line editing for cmd.exe
 - [WinSCP](https://winscp.net/eng/index.php) -> Popular SFTP client and SCP client
-- [Resource Hacker](http://www.angusj.com/resourcehacker/) -> Resource editor for 32bit/64bit Windows applications.
+- [Resource Hacker](http://www.angusj.com/resourcehacker/) or [Resource Cracker](https://www.pelock.com/products/resource-cracker) -> Resource editor for 32bit/64bit Windows applications.
 - [ZealDocs](https://zealdocs.org/) -> Offline documentation browser for software developers.
 
 ### Dev Enviroment
